@@ -40,12 +40,6 @@ namespace AsalCarpanIndex
                 }
             }
             return sayi;
-        }
-
-        static int AsalCarpanIndex()
-        {
-
-            return 0;
-        }
+        }      
     }
 }
