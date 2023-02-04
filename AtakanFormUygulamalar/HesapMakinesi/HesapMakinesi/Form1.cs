@@ -33,7 +33,7 @@ namespace HesapMakinesi
         }
         private void number_Click(object sender, EventArgs e)
         {
-            var btn = sender as Button;
+            Button btn = sender as Button;
             lblSonuc.Text += btn.Text;
             txtSayiGiris.Text += btn.Text;
         }
