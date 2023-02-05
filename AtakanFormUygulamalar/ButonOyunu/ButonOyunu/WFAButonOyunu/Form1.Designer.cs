@@ -107,14 +107,15 @@
             // 
             // lblKurallar
             // 
-            this.lblKurallar.BackColor = System.Drawing.Color.Transparent;
+            this.lblKurallar.BackColor = System.Drawing.Color.Silver;
             this.lblKurallar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblKurallar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKurallar.Location = new System.Drawing.Point(345, 9);
             this.lblKurallar.Name = "lblKurallar";
             this.lblKurallar.Size = new System.Drawing.Size(257, 25);
             this.lblKurallar.TabIndex = 6;
-            this.lblKurallar.Text = "Kurallar için fareniz ile üstüne geliniz.";
+            this.lblKurallar.Text = "Kurallar için farenizi üstüne getiriniz";
+            this.lblKurallar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblKurallar.MouseEnter += new System.EventHandler(this.lblKurallar_MouseEnter);
             this.lblKurallar.MouseLeave += new System.EventHandler(this.lblKurallar_MouseLeave);
             // 

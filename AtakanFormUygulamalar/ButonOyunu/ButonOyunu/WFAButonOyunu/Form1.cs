@@ -37,7 +37,12 @@ namespace WFAButonOyunu
 
         private void btnBasla_Click(object sender, EventArgs e)
         {
-            int bomba = rnd.Next(0, 21);
+            lblSonuc1.Visible = true;
+
+            flpButonlar.Controls.Clear();
+            lblSonuc1.Text = "0";
+
+            int bomba = rnd.Next(0, 20);
 
             for (int i = 0; i < 20; i++)
             {
@@ -62,13 +67,13 @@ namespace WFAButonOyunu
 
         private void Button_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
+            Button btn = sender as Button;
             btn.BackgroundImageLayout = ImageLayout.Stretch;
             
             if ((int)btn.Tag==0)
             {
                btn.BackgroundImage = Properties.Resources.green1;
-
+                lblSonuc1.Text = (Convert.ToInt32(lblSonuc1.Text) + 1).ToString();
 
 
 
@@ -78,6 +83,7 @@ namespace WFAButonOyunu
             else if ((int)btn.Tag == 1)
             {
                 btn.BackgroundImage = Properties.Resources.red1;
+                lblSonuc1.Text = (Convert.ToInt32(lblSonuc1.Text) - 1).ToString();
 
 
 
@@ -86,8 +92,9 @@ namespace WFAButonOyunu
             else
             {
                 btn.BackgroundImage = Properties.Resources.bomba;
-
-
+                lstSonuc.Items.Add(lblSonuc1.Text + " " + txtPlayer1.Text);
+                lblSonuc1.Visible = false;
+                lblSonuc2.Visible = false;
 
             }
 
