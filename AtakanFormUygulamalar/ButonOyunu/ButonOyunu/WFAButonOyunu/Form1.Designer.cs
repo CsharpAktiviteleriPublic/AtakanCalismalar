@@ -28,17 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.flpButonlar = new System.Windows.Forms.FlowLayoutPanel();
             this.btnBasla = new System.Windows.Forms.Button();
             this.txtPlayer1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,126 +45,21 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.grpKurallar = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tmrRenk = new System.Windows.Forms.Timer(this.components);
+            this.lblSonuc1 = new System.Windows.Forms.Label();
+            this.lblSonuc2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.grpKurallar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flpButonlar
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.button8);
-            this.flowLayoutPanel1.Controls.Add(this.button3);
-            this.flowLayoutPanel1.Controls.Add(this.button1);
-            this.flowLayoutPanel1.Controls.Add(this.button6);
-            this.flowLayoutPanel1.Controls.Add(this.button9);
-            this.flowLayoutPanel1.Controls.Add(this.button5);
-            this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Controls.Add(this.button4);
-            this.flowLayoutPanel1.Controls.Add(this.button7);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(9, 176);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(306, 223);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(3, 3);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(96, 67);
-            this.button8.TabIndex = 6;
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::WFAButonOyunu.Properties.Resources.bomba;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(105, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 67);
-            this.button3.TabIndex = 6;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(207, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 67);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(3, 76);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 67);
-            this.button6.TabIndex = 6;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.Transparent;
-            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button9.Location = new System.Drawing.Point(105, 76);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(96, 67);
-            this.button9.TabIndex = 6;
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(207, 76);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 67);
-            this.button5.TabIndex = 6;
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(3, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 67);
-            this.button2.TabIndex = 6;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(105, 149);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 67);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(207, 149);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(96, 67);
-            this.button7.TabIndex = 6;
-            this.button7.UseVisualStyleBackColor = false;
+            this.flpButonlar.BackColor = System.Drawing.Color.White;
+            this.flpButonlar.Location = new System.Drawing.Point(25, 176);
+            this.flpButonlar.Name = "flpButonlar";
+            this.flpButonlar.Size = new System.Drawing.Size(284, 223);
+            this.flpButonlar.TabIndex = 0;
             // 
             // btnBasla
             // 
@@ -183,6 +70,7 @@
             this.btnBasla.TabIndex = 1;
             this.btnBasla.Text = "Başla";
             this.btnBasla.UseVisualStyleBackColor = false;
+            this.btnBasla.Click += new System.EventHandler(this.btnBasla_Click);
             // 
             // txtPlayer1
             // 
@@ -195,6 +83,7 @@
             // 
             // label1
             // 
+            this.label1.ForeColor = System.Drawing.Color.Blue;
             this.label1.Location = new System.Drawing.Point(6, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(115, 26);
@@ -212,7 +101,7 @@
             this.txtKurallar.Name = "txtKurallar";
             this.txtKurallar.Size = new System.Drawing.Size(183, 362);
             this.txtKurallar.TabIndex = 5;
-            this.txtKurallar.Text = "\r\n1 PUAN KAZANDIRIR \r\n\r\n\r\n\r\n\r\n\r\n1 PUAN KAYBETTİRİR\r\n\r\n\r\n\r\n\r\n\r\nOYUN BİTER,PUAN YAZ" +
+            this.txtKurallar.Text = "\r\n\r\n\r\n1 PUAN KAZANDIRIR \r\n\r\n\r\n\r\n\r\n1 PUAN KAYBETTİRİR\r\n\r\n\r\n\r\n\r\nOYUN BİTER,PUAN YAZ" +
     "ILIR\r\n\r\n\r\n";
             this.txtKurallar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -223,7 +112,7 @@
             this.lblKurallar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblKurallar.Location = new System.Drawing.Point(345, 9);
             this.lblKurallar.Name = "lblKurallar";
-            this.lblKurallar.Size = new System.Drawing.Size(270, 25);
+            this.lblKurallar.Size = new System.Drawing.Size(257, 25);
             this.lblKurallar.TabIndex = 6;
             this.lblKurallar.Text = "Kurallar için fareniz ile üstüne geliniz.";
             this.lblKurallar.MouseEnter += new System.EventHandler(this.lblKurallar_MouseEnter);
@@ -245,6 +134,7 @@
             // 
             // label3
             // 
+            this.label3.ForeColor = System.Drawing.Color.Red;
             this.label3.Location = new System.Drawing.Point(6, 58);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 26);
@@ -273,9 +163,9 @@
             // 
             this.lblOynayanBilgisi.BackColor = System.Drawing.Color.Transparent;
             this.lblOynayanBilgisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOynayanBilgisi.Location = new System.Drawing.Point(8, 154);
+            this.lblOynayanBilgisi.Location = new System.Drawing.Point(93, 151);
             this.lblOynayanBilgisi.Name = "lblOynayanBilgisi";
-            this.lblOynayanBilgisi.Size = new System.Drawing.Size(307, 22);
+            this.lblOynayanBilgisi.Size = new System.Drawing.Size(175, 22);
             this.lblOynayanBilgisi.TabIndex = 12;
             this.lblOynayanBilgisi.Text = "Atakan oynuyor...";
             this.lblOynayanBilgisi.Visible = false;
@@ -285,7 +175,7 @@
             this.button10.BackColor = System.Drawing.Color.White;
             this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button10.Location = new System.Drawing.Point(39, 40);
+            this.button10.Location = new System.Drawing.Point(39, 85);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(96, 67);
             this.button10.TabIndex = 6;
@@ -296,7 +186,7 @@
             this.button12.BackColor = System.Drawing.Color.White;
             this.button12.BackgroundImage = global::WFAButonOyunu.Properties.Resources.bomba;
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button12.Location = new System.Drawing.Point(39, 277);
+            this.button12.Location = new System.Drawing.Point(39, 279);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(96, 67);
             this.button12.TabIndex = 6;
@@ -307,7 +197,7 @@
             this.button11.BackColor = System.Drawing.Color.White;
             this.button11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button11.BackgroundImage")));
             this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.Location = new System.Drawing.Point(39, 158);
+            this.button11.Location = new System.Drawing.Point(39, 184);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(96, 67);
             this.button11.TabIndex = 6;
@@ -316,17 +206,47 @@
             // grpKurallar
             // 
             this.grpKurallar.BackColor = System.Drawing.Color.White;
+            this.grpKurallar.Controls.Add(this.label2);
             this.grpKurallar.Controls.Add(this.button10);
             this.grpKurallar.Controls.Add(this.button12);
             this.grpKurallar.Controls.Add(this.button11);
             this.grpKurallar.Controls.Add(this.txtKurallar);
-            this.grpKurallar.Location = new System.Drawing.Point(608, 35);
+            this.grpKurallar.Location = new System.Drawing.Point(608, 9);
             this.grpKurallar.Name = "grpKurallar";
-            this.grpKurallar.Size = new System.Drawing.Size(186, 364);
+            this.grpKurallar.Size = new System.Drawing.Size(186, 390);
             this.grpKurallar.TabIndex = 13;
             this.grpKurallar.TabStop = false;
             this.grpKurallar.Text = "groupBox2";
             this.grpKurallar.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(6, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 53);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Bomba 1 adet diğerleri rastgele oluşmaktadır.";
+            // 
+            // lblSonuc1
+            // 
+            this.lblSonuc1.AutoSize = true;
+            this.lblSonuc1.BackColor = System.Drawing.Color.Transparent;
+            this.lblSonuc1.Location = new System.Drawing.Point(315, 34);
+            this.lblSonuc1.Name = "lblSonuc1";
+            this.lblSonuc1.Size = new System.Drawing.Size(19, 20);
+            this.lblSonuc1.TabIndex = 14;
+            this.lblSonuc1.Text = "0";
+            // 
+            // lblSonuc2
+            // 
+            this.lblSonuc2.AutoSize = true;
+            this.lblSonuc2.BackColor = System.Drawing.Color.Transparent;
+            this.lblSonuc2.Location = new System.Drawing.Point(315, 70);
+            this.lblSonuc2.Name = "lblSonuc2";
+            this.lblSonuc2.Size = new System.Drawing.Size(19, 20);
+            this.lblSonuc2.TabIndex = 14;
+            this.lblSonuc2.Text = "0";
             // 
             // Form1
             // 
@@ -334,39 +254,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
             this.BackgroundImage = global::WFAButonOyunu.Properties.Resources.white_shadow;
-            this.ClientSize = new System.Drawing.Size(798, 419);
+            this.ClientSize = new System.Drawing.Size(802, 408);
+            this.Controls.Add(this.lblSonuc2);
+            this.Controls.Add(this.lblSonuc1);
             this.Controls.Add(this.grpKurallar);
             this.Controls.Add(this.lblOynayanBilgisi);
             this.Controls.Add(this.lstSonuc);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblKurallar);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flpButonlar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Bir Bire Oyunu";
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.grpKurallar.ResumeLayout(false);
             this.grpKurallar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpButonlar;
         private System.Windows.Forms.Button btnBasla;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox txtPlayer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtKurallar;
@@ -380,6 +293,10 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.GroupBox grpKurallar;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer tmrRenk;
+        private System.Windows.Forms.Label lblSonuc1;
+        private System.Windows.Forms.Label lblSonuc2;
     }
 }
 
