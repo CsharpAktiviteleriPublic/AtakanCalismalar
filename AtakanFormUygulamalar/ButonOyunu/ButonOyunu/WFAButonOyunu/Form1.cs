@@ -37,26 +37,60 @@ namespace WFAButonOyunu
 
         private void btnBasla_Click(object sender, EventArgs e)
         {
+            int bomba = rnd.Next(0, 21);
+
             for (int i = 0; i < 20; i++)
             {
                 Button btn = new Button();
                 btn.Width = 50;
                 btn.Height = 50;
-                btn.Tag = rnd.Next(0, 2);
-                btn.Text = rnd.Next(0, 2).ToString();
                 flpButonlar.Controls.Add(btn);
-
-
-
+                
+                if (bomba != i)
+                {
+                    btn.Tag = rnd.Next(0, 2);
+                }
+                else
+                {
+                    btn.Tag = 2;
+                }
 
                 btn.Click += Button_Click;
-                
+
             }
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
+            Button btn = (Button)sender;
+            btn.BackgroundImageLayout = ImageLayout.Stretch;
             
+            if ((int)btn.Tag==0)
+            {
+               btn.BackgroundImage = Properties.Resources.green1;
+
+
+
+
+
+
+            }
+            else if ((int)btn.Tag == 1)
+            {
+                btn.BackgroundImage = Properties.Resources.red1;
+
+
+
+
+            }
+            else
+            {
+                btn.BackgroundImage = Properties.Resources.bomba;
+
+
+
+            }
+
         }
     }
 }
