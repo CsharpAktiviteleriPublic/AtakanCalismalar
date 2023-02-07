@@ -60,7 +60,7 @@
             this.label2.Location = new System.Drawing.Point(46, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 20);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "ID";
             // 
             // textBox1
@@ -68,7 +68,7 @@
             this.textBox1.Location = new System.Drawing.Point(89, 30);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(176, 26);
-            this.textBox1.TabIndex = 2;
+            this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
@@ -87,7 +87,7 @@
             this.linkKayitOl.Location = new System.Drawing.Point(6, 136);
             this.linkKayitOl.Name = "linkKayitOl";
             this.linkKayitOl.Size = new System.Drawing.Size(74, 20);
-            this.linkKayitOl.TabIndex = 3;
+            this.linkKayitOl.TabIndex = 4;
             this.linkKayitOl.TabStop = true;
             this.linkKayitOl.Text = "Kayıt OL";
             // 
@@ -106,7 +106,7 @@
             this.grpGiris.Location = new System.Drawing.Point(309, 185);
             this.grpGiris.Name = "grpGiris";
             this.grpGiris.Size = new System.Drawing.Size(310, 161);
-            this.grpGiris.TabIndex = 4;
+            this.grpGiris.TabIndex = 0;
             this.grpGiris.TabStop = false;
             this.grpGiris.Text = "Hesabınız yoksa kayıt olunuz!";
             this.grpGiris.Visible = false;
@@ -117,7 +117,7 @@
             this.btnGiris.Location = new System.Drawing.Point(143, 106);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(122, 29);
-            this.btnGiris.TabIndex = 4;
+            this.btnGiris.TabIndex = 3;
             this.btnGiris.Text = "GİRİŞ YAP";
             this.btnGiris.UseVisualStyleBackColor = false;
             // 
@@ -128,7 +128,7 @@
             this.lblWelcomeMessage.Location = new System.Drawing.Point(26, 18);
             this.lblWelcomeMessage.Name = "lblWelcomeMessage";
             this.lblWelcomeMessage.Size = new System.Drawing.Size(870, 135);
-            this.lblWelcomeMessage.TabIndex = 5;
+            this.lblWelcomeMessage.TabIndex = 0;
             this.lblWelcomeMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tmrWelcome

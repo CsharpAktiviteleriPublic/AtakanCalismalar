@@ -43,16 +43,14 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAnaSayfayaDon = new System.Windows.Forms.Button();
-            this.pnlAdSoyadIdSifre = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnlAdSoyadIdSifre.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblAd
             // 
             this.lblAd.AutoSize = true;
-            this.lblAd.Location = new System.Drawing.Point(55, 3);
+            this.lblAd.Location = new System.Drawing.Point(138, 21);
             this.lblAd.Name = "lblAd";
             this.lblAd.Size = new System.Drawing.Size(63, 20);
             this.lblAd.TabIndex = 0;
@@ -61,7 +59,7 @@
             // lblSoyad
             // 
             this.lblSoyad.AutoSize = true;
-            this.lblSoyad.Location = new System.Drawing.Point(27, 45);
+            this.lblSoyad.Location = new System.Drawing.Point(110, 63);
             this.lblSoyad.Name = "lblSoyad";
             this.lblSoyad.Size = new System.Drawing.Size(91, 20);
             this.lblSoyad.TabIndex = 0;
@@ -70,7 +68,7 @@
             // lblKullaniciAdi
             // 
             this.lblKullaniciAdi.AutoSize = true;
-            this.lblKullaniciAdi.Location = new System.Drawing.Point(7, 86);
+            this.lblKullaniciAdi.Location = new System.Drawing.Point(90, 104);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
             this.lblKullaniciAdi.Size = new System.Drawing.Size(111, 20);
             this.lblKullaniciAdi.TabIndex = 0;
@@ -79,7 +77,7 @@
             // lblSifre
             // 
             this.lblSifre.AutoSize = true;
-            this.lblSifre.Location = new System.Drawing.Point(66, 128);
+            this.lblSifre.Location = new System.Drawing.Point(149, 146);
             this.lblSifre.Name = "lblSifre";
             this.lblSifre.Size = new System.Drawing.Size(52, 20);
             this.lblSifre.TabIndex = 0;
@@ -99,7 +97,7 @@
             this.txtSoyad.Location = new System.Drawing.Point(207, 59);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(205, 26);
-            this.txtSoyad.TabIndex = 1;
+            this.txtSoyad.TabIndex = 2;
             // 
             // txtKullaniciAdi
             // 
@@ -107,7 +105,7 @@
             this.txtKullaniciAdi.Location = new System.Drawing.Point(207, 100);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(205, 26);
-            this.txtKullaniciAdi.TabIndex = 1;
+            this.txtKullaniciAdi.TabIndex = 3;
             // 
             // txtSifre
             // 
@@ -115,7 +113,7 @@
             this.txtSifre.Location = new System.Drawing.Point(207, 141);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(205, 26);
-            this.txtSifre.TabIndex = 1;
+            this.txtSifre.TabIndex = 4;
             // 
             // btnKayitOl
             // 
@@ -123,13 +121,13 @@
             this.btnKayitOl.Location = new System.Drawing.Point(207, 177);
             this.btnKayitOl.Name = "btnKayitOl";
             this.btnKayitOl.Size = new System.Drawing.Size(205, 38);
-            this.btnKayitOl.TabIndex = 3;
+            this.btnKayitOl.TabIndex = 5;
             this.btnKayitOl.Text = "Kayıt Ol";
             this.btnKayitOl.UseVisualStyleBackColor = false;
+            this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
             // tmrLabelYanipSönme
             // 
-            this.tmrLabelYanipSönme.Interval = 300;
             this.tmrLabelYanipSönme.Tick += new System.EventHandler(this.tmrLabelYanipSönme_Tick);
             // 
             // pictureBox2
@@ -161,22 +159,10 @@
             this.btnAnaSayfayaDon.Location = new System.Drawing.Point(0, 247);
             this.btnAnaSayfayaDon.Name = "btnAnaSayfayaDon";
             this.btnAnaSayfayaDon.Size = new System.Drawing.Size(562, 30);
-            this.btnAnaSayfayaDon.TabIndex = 3;
+            this.btnAnaSayfayaDon.TabIndex = 6;
             this.btnAnaSayfayaDon.Text = "ANA SAYFAYA DÖN";
             this.btnAnaSayfayaDon.UseVisualStyleBackColor = false;
             this.btnAnaSayfayaDon.Click += new System.EventHandler(this.btnAnaSayfayaDon_Click);
-            // 
-            // pnlAdSoyadIdSifre
-            // 
-            this.pnlAdSoyadIdSifre.Controls.Add(this.lblAd);
-            this.pnlAdSoyadIdSifre.Controls.Add(this.lblSoyad);
-            this.pnlAdSoyadIdSifre.Controls.Add(this.lblKullaniciAdi);
-            this.pnlAdSoyadIdSifre.Controls.Add(this.lblSifre);
-            this.pnlAdSoyadIdSifre.ForeColor = System.Drawing.Color.White;
-            this.pnlAdSoyadIdSifre.Location = new System.Drawing.Point(80, 18);
-            this.pnlAdSoyadIdSifre.Name = "pnlAdSoyadIdSifre";
-            this.pnlAdSoyadIdSifre.Size = new System.Drawing.Size(121, 149);
-            this.pnlAdSoyadIdSifre.TabIndex = 6;
             // 
             // KullaniciKayit
             // 
@@ -184,8 +170,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(562, 277);
-            this.Controls.Add(this.pnlAdSoyadIdSifre);
+            this.Controls.Add(this.lblAd);
+            this.Controls.Add(this.lblSoyad);
+            this.Controls.Add(this.lblKullaniciAdi);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.lblSifre);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnAnaSayfayaDon);
             this.Controls.Add(this.btnKayitOl);
@@ -201,8 +190,6 @@
             this.Load += new System.EventHandler(this.KullaniciKayit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnlAdSoyadIdSifre.ResumeLayout(false);
-            this.pnlAdSoyadIdSifre.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,6 +211,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnAnaSayfayaDon;
-        private System.Windows.Forms.Panel pnlAdSoyadIdSifre;
     }
 }
