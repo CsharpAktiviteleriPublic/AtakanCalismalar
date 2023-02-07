@@ -101,10 +101,11 @@
             this.grpGiris.Controls.Add(this.textBox1);
             this.grpGiris.Controls.Add(this.label2);
             this.grpGiris.Controls.Add(this.label1);
+            this.grpGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grpGiris.ForeColor = System.Drawing.Color.White;
-            this.grpGiris.Location = new System.Drawing.Point(312, 179);
+            this.grpGiris.Location = new System.Drawing.Point(314, 167);
             this.grpGiris.Name = "grpGiris";
-            this.grpGiris.Size = new System.Drawing.Size(310, 159);
+            this.grpGiris.Size = new System.Drawing.Size(310, 190);
             this.grpGiris.TabIndex = 4;
             this.grpGiris.TabStop = false;
             this.grpGiris.Text = "Hesabınız yoksa kayıt olunuz!";
@@ -137,7 +138,7 @@
             // 
             // tmrMoveGroupBox
             // 
-            this.tmrMoveGroupBox.Interval = 2;
+            this.tmrMoveGroupBox.Interval = 1;
             this.tmrMoveGroupBox.Tick += new System.EventHandler(this.tmrMoveGroupBox_Tick);
             // 
             // KullaniciGiris
@@ -150,7 +151,6 @@
             this.Controls.Add(this.lblWelcomeMessage);
             this.Controls.Add(this.grpGiris);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KullaniciGiris";
             this.Text = "Kullanıcı Giriş";

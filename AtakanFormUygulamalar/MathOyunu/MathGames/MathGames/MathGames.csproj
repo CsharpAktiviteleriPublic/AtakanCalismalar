@@ -119,5 +119,20 @@
   <ItemGroup>
     <None Include="Resources\black2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bird_Gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\T0NA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-rotate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-rotate %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ezgif.com-rotate %282%29.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@ namespace MathGames
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KullaniciKayit());
+            Application.Run(new KullaniciGiris());
         }
     }
 }
