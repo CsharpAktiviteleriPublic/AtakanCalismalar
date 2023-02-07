@@ -103,9 +103,9 @@
             this.grpGiris.Controls.Add(this.label1);
             this.grpGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grpGiris.ForeColor = System.Drawing.Color.White;
-            this.grpGiris.Location = new System.Drawing.Point(314, 167);
+            this.grpGiris.Location = new System.Drawing.Point(309, 185);
             this.grpGiris.Name = "grpGiris";
-            this.grpGiris.Size = new System.Drawing.Size(310, 190);
+            this.grpGiris.Size = new System.Drawing.Size(310, 161);
             this.grpGiris.TabIndex = 4;
             this.grpGiris.TabStop = false;
             this.grpGiris.Text = "Hesabınız yoksa kayıt olunuz!";
@@ -147,7 +147,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MathGames.Properties.Resources.black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(918, 369);
+            this.ClientSize = new System.Drawing.Size(918, 358);
             this.Controls.Add(this.lblWelcomeMessage);
             this.Controls.Add(this.grpGiris);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
