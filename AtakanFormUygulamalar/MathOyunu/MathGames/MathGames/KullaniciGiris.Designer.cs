@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.linkKayitOl = new System.Windows.Forms.LinkLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpGiris = new System.Windows.Forms.GroupBox();
             this.btnGiris = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.lblWelcomeMessage = new System.Windows.Forms.Label();
+            this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
+            this.tmrMoveGroupBox = new System.Windows.Forms.Timer(this.components);
+            this.grpGiris.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(27, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 20);
@@ -50,6 +55,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(46, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 20);
@@ -73,50 +80,83 @@
             // linkKayitOl
             // 
             this.linkKayitOl.AutoSize = true;
+            this.linkKayitOl.BackColor = System.Drawing.Color.Transparent;
+            this.linkKayitOl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.linkKayitOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.linkKayitOl.Location = new System.Drawing.Point(6, 158);
+            this.linkKayitOl.LinkColor = System.Drawing.Color.MediumSpringGreen;
+            this.linkKayitOl.Location = new System.Drawing.Point(6, 136);
             this.linkKayitOl.Name = "linkKayitOl";
-            this.linkKayitOl.Size = new System.Drawing.Size(72, 18);
+            this.linkKayitOl.Size = new System.Drawing.Size(74, 20);
             this.linkKayitOl.TabIndex = 3;
             this.linkKayitOl.TabStop = true;
             this.linkKayitOl.Text = "Kayıt OL";
             // 
-            // groupBox1
+            // grpGiris
             // 
-            this.groupBox1.Controls.Add(this.btnGiris);
-            this.groupBox1.Controls.Add(this.linkKayitOl);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(45, 30);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(296, 179);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Hesabınız yoksa kayıt olunuz!";
+            this.grpGiris.BackColor = System.Drawing.Color.Transparent;
+            this.grpGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.grpGiris.Controls.Add(this.btnGiris);
+            this.grpGiris.Controls.Add(this.linkKayitOl);
+            this.grpGiris.Controls.Add(this.textBox2);
+            this.grpGiris.Controls.Add(this.textBox1);
+            this.grpGiris.Controls.Add(this.label2);
+            this.grpGiris.Controls.Add(this.label1);
+            this.grpGiris.ForeColor = System.Drawing.Color.White;
+            this.grpGiris.Location = new System.Drawing.Point(312, 179);
+            this.grpGiris.Name = "grpGiris";
+            this.grpGiris.Size = new System.Drawing.Size(310, 159);
+            this.grpGiris.TabIndex = 4;
+            this.grpGiris.TabStop = false;
+            this.grpGiris.Text = "Hesabınız yoksa kayıt olunuz!";
+            this.grpGiris.Visible = false;
             // 
             // btnGiris
             // 
+            this.btnGiris.BackColor = System.Drawing.Color.Black;
             this.btnGiris.Location = new System.Drawing.Point(143, 106);
             this.btnGiris.Name = "btnGiris";
             this.btnGiris.Size = new System.Drawing.Size(122, 29);
             this.btnGiris.TabIndex = 4;
             this.btnGiris.Text = "GİRİŞ YAP";
-            this.btnGiris.UseVisualStyleBackColor = true;
+            this.btnGiris.UseVisualStyleBackColor = false;
+            // 
+            // lblWelcomeMessage
+            // 
+            this.lblWelcomeMessage.BackColor = System.Drawing.Color.Transparent;
+            this.lblWelcomeMessage.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblWelcomeMessage.Location = new System.Drawing.Point(26, 18);
+            this.lblWelcomeMessage.Name = "lblWelcomeMessage";
+            this.lblWelcomeMessage.Size = new System.Drawing.Size(870, 135);
+            this.lblWelcomeMessage.TabIndex = 5;
+            this.lblWelcomeMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tmrWelcome
+            // 
+            this.tmrWelcome.Interval = 20;
+            this.tmrWelcome.Tick += new System.EventHandler(this.tmrWelcome_Tick);
+            // 
+            // tmrMoveGroupBox
+            // 
+            this.tmrMoveGroupBox.Interval = 2;
+            this.tmrMoveGroupBox.Tick += new System.EventHandler(this.tmrMoveGroupBox_Tick);
             // 
             // KullaniciGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 245);
-            this.Controls.Add(this.groupBox1);
+            this.BackgroundImage = global::MathGames.Properties.Resources.black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(918, 369);
+            this.Controls.Add(this.lblWelcomeMessage);
+            this.Controls.Add(this.grpGiris);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "KullaniciGiris";
-            this.Text = "KULLANICI GİRİŞ";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "Kullanıcı Giriş";
+            this.Load += new System.EventHandler(this.KullaniciGiris_Load);
+            this.grpGiris.ResumeLayout(false);
+            this.grpGiris.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -128,8 +168,11 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.LinkLabel linkKayitOl;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox grpGiris;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.Label lblWelcomeMessage;
+        private System.Windows.Forms.Timer tmrWelcome;
+        private System.Windows.Forms.Timer tmrMoveGroupBox;
     }
 }
 

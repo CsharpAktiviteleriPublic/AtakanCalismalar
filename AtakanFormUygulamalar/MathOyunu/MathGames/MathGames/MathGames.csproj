@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SkorTablosu.resx">
       <DependentUpon>SkorTablosu.cs</DependentUpon>
@@ -105,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-background-with-fading-square-and-dots-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\black2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
