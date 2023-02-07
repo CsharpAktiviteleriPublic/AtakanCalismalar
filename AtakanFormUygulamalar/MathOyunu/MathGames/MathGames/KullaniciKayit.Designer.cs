@@ -42,81 +42,81 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 55);
+            this.label1.Location = new System.Drawing.Point(194, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 20);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Adınız:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 98);
+            this.label2.Location = new System.Drawing.Point(159, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.Size = new System.Drawing.Size(114, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Soyadınız:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 141);
+            this.label3.Location = new System.Drawing.Point(134, 141);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(139, 25);
             this.label3.TabIndex = 0;
             this.label3.Text = "Kullanıcı Adı:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 184);
+            this.label4.Location = new System.Drawing.Point(209, 184);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 20);
+            this.label4.Size = new System.Drawing.Size(64, 25);
             this.label4.TabIndex = 0;
             this.label4.Text = "Şifre:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 55);
+            this.textBox1.Location = new System.Drawing.Point(277, 55);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(177, 26);
+            this.textBox1.Size = new System.Drawing.Size(177, 30);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 96);
+            this.textBox2.Location = new System.Drawing.Point(277, 96);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(177, 26);
+            this.textBox2.Size = new System.Drawing.Size(177, 30);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 137);
+            this.textBox3.Location = new System.Drawing.Point(277, 137);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(177, 26);
+            this.textBox3.Size = new System.Drawing.Size(177, 30);
             this.textBox3.TabIndex = 1;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 178);
+            this.textBox4.Location = new System.Drawing.Point(277, 178);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(177, 26);
+            this.textBox4.Size = new System.Drawing.Size(177, 30);
             this.textBox4.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 9);
+            this.label5.Location = new System.Drawing.Point(40, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(152, 20);
+            this.label5.Size = new System.Drawing.Size(597, 25);
             this.label5.TabIndex = 2;
-            this.label5.Text = "YENİ ÜYE KAYDI";
+            this.label5.Text = "Lütfen Bilgilerinizi doğru giriniz, tekrar değiştiremeyeceksiniz!";
             // 
             // KullaniciKayit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 267);
+            this.ClientSize = new System.Drawing.Size(665, 246);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
