@@ -91,6 +91,15 @@ namespace MathGames.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream correct_choice_43861 {
+            get {
+                return ResourceManager.GetStream("correct_choice_43861", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_rotate {
@@ -117,6 +126,15 @@ namespace MathGames.Properties {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-rotate (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream failure_drum_sound_effect_2_7184 {
+            get {
+                return ResourceManager.GetStream("failure_drum_sound_effect_2_7184", resourceCulture);
             }
         }
         

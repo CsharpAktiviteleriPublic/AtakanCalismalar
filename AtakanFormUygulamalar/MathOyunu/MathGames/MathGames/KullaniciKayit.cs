@@ -18,22 +18,28 @@ namespace MathGames
         }
 
         private int sayac = 0;
+        
 
+        private void KullaniciKayit_Load(object sender, EventArgs e)
+        {
+            
+            tmrLabelYanipSönme.Start();
+        }
         private void tmrLabelYanipSönme_Tick(object sender, EventArgs e)
         {
             if (sayac==0)
             {
-                lblSifre.ForeColor = Color.White;
-                lblKullaniciAdi.ForeColor = Color.WhiteSmoke;
-                lblSoyad.ForeColor = Color.Gainsboro;
-                lblAd.ForeColor = Color.LightGray;
+                lblSifre.ForeColor = Color.White;//0 
+                lblKullaniciAdi.ForeColor = Color.WhiteSmoke;//1
+                lblSoyad.ForeColor = Color.Gainsboro;//2
+                lblAd.ForeColor = Color.LightGray;//3
             }
             else if(sayac==1)
             {
-                lblSifre.ForeColor = Color.WhiteSmoke;
-                lblKullaniciAdi.ForeColor = Color.Gainsboro;
-                lblSoyad.ForeColor = Color.LightGray;
-                lblAd.ForeColor = Color.Silver;
+                lblSifre.ForeColor = Color.WhiteSmoke;//1
+                lblKullaniciAdi.ForeColor = Color.Gainsboro;//2
+                lblSoyad.ForeColor = Color.LightGray;//3
+                lblAd.ForeColor = Color.Silver;//4
             }
             else if (sayac == 2)
             {
@@ -51,17 +57,17 @@ namespace MathGames
             }
             else if (sayac == 4)
             {
-                lblSifre.ForeColor = Color.Silver;
-                lblKullaniciAdi.ForeColor = Color.DarkGray;
-                lblSoyad.ForeColor = Color.Gray;
-                lblAd.ForeColor = Color.DimGray;
+                lblSifre.ForeColor = Color.Silver;//4
+                lblKullaniciAdi.ForeColor = Color.DarkGray;//5
+                lblSoyad.ForeColor = Color.Gray;//6
+                lblAd.ForeColor = Color.DimGray;//7
             }
             else if (sayac == 5)
             {
-                lblSifre.ForeColor = Color.DarkGray;
-                lblKullaniciAdi.ForeColor = Color.Gray;
-                lblSoyad.ForeColor = Color.DimGray;
-                lblAd.ForeColor = Color.White;
+                lblSifre.ForeColor = Color.DarkGray;//5
+                lblKullaniciAdi.ForeColor = Color.Gray;//6
+                lblSoyad.ForeColor = Color.DimGray;//7
+                lblAd.ForeColor = Color.White;//1
             }
             else if (sayac == 6)
             {
@@ -72,10 +78,10 @@ namespace MathGames
             }
             else
             {
-                lblSifre.ForeColor = Color.DimGray;
-                lblKullaniciAdi.ForeColor = Color.White;
-                lblSoyad.ForeColor = Color.WhiteSmoke;
-                lblAd.ForeColor = Color.Gainsboro;
+                lblSifre.ForeColor = Color.DimGray;//7
+                lblKullaniciAdi.ForeColor = Color.White;//1
+                lblSoyad.ForeColor = Color.WhiteSmoke;//2
+                lblAd.ForeColor = Color.Gainsboro;//3
                 sayac = -1;
             }
             
@@ -83,13 +89,13 @@ namespace MathGames
 
         }
 
-        private void KullaniciKayit_Load(object sender, EventArgs e)
-        {
-            tmrLabelYanipSönme.Start();
-        }
+       
 
         private void btnAnaSayfayaDon_Click(object sender, EventArgs e)
         {
+            KullaniciGiris kullaniciGiris = new KullaniciGiris();
+            kullaniciGiris.count = 1;
+            kullaniciGiris.Show();
             Hide();
         }
 

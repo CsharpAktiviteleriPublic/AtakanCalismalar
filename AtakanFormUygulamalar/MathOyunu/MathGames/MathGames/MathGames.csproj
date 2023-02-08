@@ -134,5 +134,11 @@
   <ItemGroup>
     <None Include="Resources\ezgif.com-rotate %282%29.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correct-choice-43861.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\failure-drum-sound-effect-2-7184.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
