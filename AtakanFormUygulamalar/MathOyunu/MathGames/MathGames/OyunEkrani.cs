@@ -17,6 +17,12 @@ namespace MathGames
         {
             InitializeComponent();
         }
+        
+        public string kullaniciAdi;
+        public string sifre;
+        public string ad;
+        public string soyad;
+        public string adSoyadID;
 
         private int i = 4;
         Random rnd = new Random();
@@ -30,7 +36,8 @@ namespace MathGames
 
         private void OyunEkrani_Load(object sender, EventArgs e)
         {
-
+            
+            lblHosgeldinAdSoyad.Text = $"Hoşgeldin {ad} {soyad} Başarılar!";
             IslemOlustur(num1, num2, islem);
             tmrSayacUc.Start();
         }

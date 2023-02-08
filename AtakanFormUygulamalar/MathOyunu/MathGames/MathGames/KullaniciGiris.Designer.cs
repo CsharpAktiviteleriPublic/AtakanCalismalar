@@ -168,13 +168,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.LinkLabel linkKayitOl;
         private System.Windows.Forms.GroupBox grpGiris;
         private System.Windows.Forms.Button btnGiris;
         private System.Windows.Forms.Label lblWelcomeMessage;
         private System.Windows.Forms.Timer tmrWelcome;
         private System.Windows.Forms.Timer tmrMoveGroupBox;
+        public System.Windows.Forms.TextBox txtSifre;
     }
 }
 

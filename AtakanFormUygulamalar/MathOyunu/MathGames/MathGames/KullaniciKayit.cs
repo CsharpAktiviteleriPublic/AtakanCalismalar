@@ -98,13 +98,12 @@ namespace MathGames
         }
         private void btnKayitOl_Click(object sender, EventArgs e)
         {            
-            kullaniciGiris.kullaniciAdi = txtKullaniciAdi.Text;
+            kullaniciGiris.kullaniciAdi = txtKullaniciAdi.Text;            
             kullaniciGiris.sifre = txtSifre.Text;
             kullaniciGiris.ad = txtAd.Text;
             kullaniciGiris.soyad = txtSoyad.Text;
-            kullaniciGiris.adSoyadID = kullaniciGiris.ad+" "+kullaniciGiris.soyad+" "+kullaniciGiris.kullaniciAdi;
-           
-            kullaniciGiris.uyeBilgisi.Add(kullaniciGiris.sifre, kullaniciGiris.adSoyadID);
+            kullaniciGiris.adSoyadID = kullaniciGiris.ad+" "+kullaniciGiris.soyad+" "+kullaniciGiris.kullaniciAdi;           
+            kullaniciGiris.uyeBilgisi.Add(kullaniciGiris.sifre,( txtAd.Text+" "+txtSoyad.Text+" "+txtKullaniciAdi.Text));
 
 
 

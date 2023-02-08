@@ -19,28 +19,28 @@ namespace MathGames
         }
         private string welcomeMessage;
         private int i = 0;
-        public int count = 0;       
+        public int count = 0;
 
         public Dictionary<string, string> uyeBilgisi = new Dictionary<string, string>();
-        public string kullaniciAdi ="";
+        public string kullaniciAdi = "";
         public string sifre = "";
         public string ad = "";
         public string soyad = "";
         public string adSoyadID = "";
-        
+
 
         private void KullaniciGiris_Load(object sender, EventArgs e)
         {
             grpGiris.Top = this.Height;
 
             welcomeMessage = "Bu programın kullanım amacı temel işlem bilgilerinizi hızlandırmak, sayısal işlemlerde seri düşünebilmenizi sağlamaktır. \n\nToplama Çıkarma ve Çarpma işlemlerini ne kadar hızlı çözüp cevaplarsanız, o kadar puan kazanırsınız!\n\nDenemek için lütfen aşağıdan giriş yapınız.\nEğer hesabınız yoksa öncelikle kayıt olunuz.!";
-            
-            
+
+
             if (count != 0)
             {
                 lblWelcomeMessage.Text = welcomeMessage;
                 grpGiris.Visible = true;
-                grpGiris.Top = this.Height - grpGiris.Height-60;
+                grpGiris.Top = this.Height - grpGiris.Height - 60;
             }
             else
             {
@@ -50,7 +50,7 @@ namespace MathGames
         }
 
         private void tmrWelcome_Tick(object sender, EventArgs e)
-        {            
+        {
             if (i >= welcomeMessage.Length - 1)
             {
                 grpGiris.Visible = true;
@@ -75,13 +75,22 @@ namespace MathGames
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
+            string[] adSoyadK = new string[3];
             
 
             if (uyeBilgisi.ContainsKey(txtSifre.Text))
             {
-                if (uyeBilgisi[sifre].Split(' ')[uyeBilgisi[sifre].Split(' ').Length-1] ==txtID.Text)
+                if (uyeBilgisi[txtSifre.Text].Split(' ')[uyeBilgisi[txtSifre.Text].Split(' ').Length - 1] == txtID.Text)
                 {
                     OyunEkrani oyunEkrani = new OyunEkrani();
+                    
+                    adSoyadK = uyeBilgisi[txtSifre.Text].Split(' ');
+                    oyunEkrani.ad = adSoyadK[0];
+                    oyunEkrani.soyad = adSoyadK[1];
+                    oyunEkrani.kullaniciAdi = adSoyadK[2] ;
+                    oyunEkrani.sifre = txtSifre.Text;
+                    oyunEkrani.adSoyadID = ad+" "+soyad+" "+kullaniciAdi;
+
                     oyunEkrani.Show();
                     Hide();
                 }
@@ -89,15 +98,15 @@ namespace MathGames
                 {
                     MessageBox.Show("Şifre veya kullanıcı adı hatalıdır.");
                 }
-                
+
             }
             else
             {
                 MessageBox.Show("Böyle bir şifre bulunamadı!");
             }
 
-           
+
         }
-        
+
     }
 }
