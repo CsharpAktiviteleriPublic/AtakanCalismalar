@@ -76,6 +76,9 @@ namespace MathGames
             {
                 lblSayacUc.Visible = false;
                 tmrSayacUc.Stop();
+                flpIslem.Visible = true;
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
                 tmrSure.Start();
             }
             i--;
@@ -95,7 +98,7 @@ namespace MathGames
                 {
                     CorrectSoundPlayer(sender, e);
                     txtSonuc.BackColor = Color.Green;
-                    score += 1;
+                    score++;
                     IslemOlustur(num1, num2, sum);
                     txtSonuc.Clear();
                 }
@@ -103,6 +106,7 @@ namespace MathGames
                 {
                     MistakeSoundPlayer(sender, e);
                     txtSonuc.BackColor = Color.Red;
+                    score--;
                 }
             }
             else if (!(e.KeyChar == (Char)Keys.Delete || e.KeyChar == 45 /* '-' işareti */ || e.KeyChar == (Char)Keys.Back || char.IsNumber(e.KeyChar)))
@@ -119,6 +123,7 @@ namespace MathGames
             else
             {
                 tmrSure.Stop();
+                MessageBox.Show(score.ToString());
                 SkorTablosu skorTablosu = new SkorTablosu();
                 skorTablosu.ShowDialog();
             }

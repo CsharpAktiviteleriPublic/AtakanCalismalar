@@ -140,5 +140,8 @@
   <ItemGroup>
     <None Include="Resources\failure-drum-sound-effect-2-7184.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catgif.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
