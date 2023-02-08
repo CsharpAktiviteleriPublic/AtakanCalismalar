@@ -18,23 +18,25 @@ namespace MathGames
         }
 
         private int sayac = 0;
+        KullaniciGiris kullaniciGiris = new KullaniciGiris();
         
+
 
         private void KullaniciKayit_Load(object sender, EventArgs e)
         {
-            
+
             tmrLabelYanipSönme.Start();
         }
         private void tmrLabelYanipSönme_Tick(object sender, EventArgs e)
         {
-            if (sayac==0)
+            if (sayac == 0)
             {
                 lblSifre.ForeColor = Color.White;//0 
                 lblKullaniciAdi.ForeColor = Color.WhiteSmoke;//1
                 lblSoyad.ForeColor = Color.Gainsboro;//2
                 lblAd.ForeColor = Color.LightGray;//3
             }
-            else if(sayac==1)
+            else if (sayac == 1)
             {
                 lblSifre.ForeColor = Color.WhiteSmoke;//1
                 lblKullaniciAdi.ForeColor = Color.Gainsboro;//2
@@ -84,23 +86,29 @@ namespace MathGames
                 lblAd.ForeColor = Color.Gainsboro;//3
                 sayac = -1;
             }
-            
+
             sayac++;
 
         }
-
-       
-
         private void btnAnaSayfayaDon_Click(object sender, EventArgs e)
         {
-            KullaniciGiris kullaniciGiris = new KullaniciGiris();
             kullaniciGiris.count = 1;
             kullaniciGiris.Show();
             Hide();
         }
-
         private void btnKayitOl_Click(object sender, EventArgs e)
-        {
+        {            
+            kullaniciGiris.kullaniciAdi = txtKullaniciAdi.Text;
+            kullaniciGiris.sifre = txtSifre.Text;
+            kullaniciGiris.ad = txtAd.Text;
+            kullaniciGiris.soyad = txtSoyad.Text;
+            kullaniciGiris.adSoyadID = kullaniciGiris.ad+" "+kullaniciGiris.soyad+" "+kullaniciGiris.kullaniciAdi;
+           
+            kullaniciGiris.uyeBilgisi.Add(kullaniciGiris.sifre, kullaniciGiris.adSoyadID);
+
+
+
+
             MessageBox.Show("Hesap oluşturuldu.");
         }
     }

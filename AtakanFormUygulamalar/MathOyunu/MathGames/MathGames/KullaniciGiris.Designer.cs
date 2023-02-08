@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.linkKayitOl = new System.Windows.Forms.LinkLabel();
             this.grpGiris = new System.Windows.Forms.GroupBox();
             this.btnGiris = new System.Windows.Forms.Button();
@@ -63,19 +63,19 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "ID";
             // 
-            // textBox1
+            // txtID
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 30);
-            this.textBox1.TabIndex = 1;
+            this.txtID.Location = new System.Drawing.Point(89, 30);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(176, 30);
+            this.txtID.TabIndex = 1;
             // 
-            // textBox2
+            // txtSifre
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 30);
-            this.textBox2.TabIndex = 2;
+            this.txtSifre.Location = new System.Drawing.Point(89, 74);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(176, 30);
+            this.txtSifre.TabIndex = 2;
             // 
             // linkKayitOl
             // 
@@ -98,8 +98,8 @@
             this.grpGiris.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.grpGiris.Controls.Add(this.btnGiris);
             this.grpGiris.Controls.Add(this.linkKayitOl);
-            this.grpGiris.Controls.Add(this.textBox2);
-            this.grpGiris.Controls.Add(this.textBox1);
+            this.grpGiris.Controls.Add(this.txtSifre);
+            this.grpGiris.Controls.Add(this.txtID);
             this.grpGiris.Controls.Add(this.label2);
             this.grpGiris.Controls.Add(this.label1);
             this.grpGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -167,8 +167,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.LinkLabel linkKayitOl;
         private System.Windows.Forms.GroupBox grpGiris;
         private System.Windows.Forms.Button btnGiris;

@@ -19,9 +19,15 @@ namespace MathGames
         }
         private string welcomeMessage;
         private int i = 0;
-        public int count = 0;
-        KullaniciKayit kullaniciKayit = new KullaniciKayit();
-        OyunEkrani oyunEkrani = new OyunEkrani();
+        public int count = 0;       
+
+        public Dictionary<string, string> uyeBilgisi = new Dictionary<string, string>();
+        public string kullaniciAdi ="";
+        public string sifre = "";
+        public string ad = "";
+        public string soyad = "";
+        public string adSoyadID = "";
+        
 
         private void KullaniciGiris_Load(object sender, EventArgs e)
         {
@@ -61,15 +67,36 @@ namespace MathGames
         }
 
         private void linkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {            
-            kullaniciKayit.Show();
+        {
+            KullaniciKayit kullaniciKayit = new KullaniciKayit();
             Hide();
+            kullaniciKayit.Show();
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            oyunEkrani.Show();
-            Hide();
+            
+
+            if (uyeBilgisi.ContainsKey(txtSifre.Text))
+            {
+                if (uyeBilgisi[sifre].Split(' ')[uyeBilgisi[sifre].Split(' ').Length-1] ==txtID.Text)
+                {
+                    OyunEkrani oyunEkrani = new OyunEkrani();
+                    oyunEkrani.Show();
+                    Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Şifre veya kullanıcı adı hatalıdır.");
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir şifre bulunamadı!");
+            }
+
+           
         }
         
     }
