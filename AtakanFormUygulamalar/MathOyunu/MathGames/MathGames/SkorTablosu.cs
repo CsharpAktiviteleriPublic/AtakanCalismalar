@@ -12,8 +12,11 @@ namespace MathGames
 {
     public partial class SkorTablosu : Form
     {
+     
+
         public SkorTablosu()
         {
+
             InitializeComponent();
         }
 
@@ -27,9 +30,6 @@ namespace MathGames
 
         private void btnTekrarOyna_Click(object sender, EventArgs e)
         {
-            KullaniciGiris kullaniciGiris = new KullaniciGiris();
-            kullaniciGiris.count = 1;
-            kullaniciGiris.Show();           
             
             Hide();
         }
