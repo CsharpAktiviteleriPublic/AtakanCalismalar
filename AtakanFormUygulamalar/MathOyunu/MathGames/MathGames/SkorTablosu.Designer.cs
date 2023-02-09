@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.btnTekrarOyna = new System.Windows.Forms.Button();
+            this.btnAnaSayfaDön = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -42,14 +42,15 @@
             this.listBox1.Size = new System.Drawing.Size(921, 404);
             this.listBox1.TabIndex = 0;
             // 
-            // btnTekrarOyna
+            // btnAnaSayfaDön
             // 
-            this.btnTekrarOyna.Location = new System.Drawing.Point(682, 420);
-            this.btnTekrarOyna.Name = "btnTekrarOyna";
-            this.btnTekrarOyna.Size = new System.Drawing.Size(244, 45);
-            this.btnTekrarOyna.TabIndex = 1;
-            this.btnTekrarOyna.Text = "Tekrar Oyna";
-            this.btnTekrarOyna.UseVisualStyleBackColor = true;
+            this.btnAnaSayfaDön.Location = new System.Drawing.Point(682, 420);
+            this.btnAnaSayfaDön.Name = "btnAnaSayfaDön";
+            this.btnAnaSayfaDön.Size = new System.Drawing.Size(244, 45);
+            this.btnAnaSayfaDön.TabIndex = 1;
+            this.btnAnaSayfaDön.Text = "ANASAYFA";
+            this.btnAnaSayfaDön.UseVisualStyleBackColor = true;
+            this.btnAnaSayfaDön.Click += new System.EventHandler(this.btnTekrarOyna_Click);
             // 
             // button2
             // 
@@ -66,7 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 478);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnTekrarOyna);
+            this.Controls.Add(this.btnAnaSayfaDön);
             this.Controls.Add(this.listBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -80,7 +81,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button btnTekrarOyna;
+        private System.Windows.Forms.Button btnAnaSayfaDön;
         private System.Windows.Forms.Button button2;
     }
 }

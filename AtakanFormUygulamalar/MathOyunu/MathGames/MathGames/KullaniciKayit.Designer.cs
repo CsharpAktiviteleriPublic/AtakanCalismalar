@@ -52,7 +52,7 @@
             this.lblAd.AutoSize = true;
             this.lblAd.Location = new System.Drawing.Point(138, 21);
             this.lblAd.Name = "lblAd";
-            this.lblAd.Size = new System.Drawing.Size(63, 20);
+            this.lblAd.Size = new System.Drawing.Size(79, 25);
             this.lblAd.TabIndex = 0;
             this.lblAd.Text = "Adınız:";
             // 
@@ -61,7 +61,7 @@
             this.lblSoyad.AutoSize = true;
             this.lblSoyad.Location = new System.Drawing.Point(110, 63);
             this.lblSoyad.Name = "lblSoyad";
-            this.lblSoyad.Size = new System.Drawing.Size(91, 20);
+            this.lblSoyad.Size = new System.Drawing.Size(114, 25);
             this.lblSoyad.TabIndex = 0;
             this.lblSoyad.Text = "Soyadınız:";
             // 
@@ -70,7 +70,7 @@
             this.lblKullaniciAdi.AutoSize = true;
             this.lblKullaniciAdi.Location = new System.Drawing.Point(90, 104);
             this.lblKullaniciAdi.Name = "lblKullaniciAdi";
-            this.lblKullaniciAdi.Size = new System.Drawing.Size(111, 20);
+            this.lblKullaniciAdi.Size = new System.Drawing.Size(139, 25);
             this.lblKullaniciAdi.TabIndex = 0;
             this.lblKullaniciAdi.Text = "Kullanıcı Adı:";
             // 
@@ -79,24 +79,26 @@
             this.lblSifre.AutoSize = true;
             this.lblSifre.Location = new System.Drawing.Point(149, 146);
             this.lblSifre.Name = "lblSifre";
-            this.lblSifre.Size = new System.Drawing.Size(52, 20);
+            this.lblSifre.Size = new System.Drawing.Size(64, 25);
             this.lblSifre.TabIndex = 0;
             this.lblSifre.Text = "Şifre:";
             // 
             // txtAd
             // 
             this.txtAd.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtAd.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtAd.Location = new System.Drawing.Point(207, 18);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(205, 26);
+            this.txtAd.Size = new System.Drawing.Size(205, 30);
             this.txtAd.TabIndex = 1;
             // 
             // txtSoyad
             // 
             this.txtSoyad.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtSoyad.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtSoyad.Location = new System.Drawing.Point(207, 59);
             this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(205, 26);
+            this.txtSoyad.Size = new System.Drawing.Size(205, 30);
             this.txtSoyad.TabIndex = 2;
             // 
             // txtKullaniciAdi
@@ -104,7 +106,7 @@
             this.txtKullaniciAdi.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.txtKullaniciAdi.Location = new System.Drawing.Point(207, 100);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
-            this.txtKullaniciAdi.Size = new System.Drawing.Size(205, 26);
+            this.txtKullaniciAdi.Size = new System.Drawing.Size(205, 30);
             this.txtKullaniciAdi.TabIndex = 3;
             // 
             // txtSifre
@@ -112,7 +114,8 @@
             this.txtSifre.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.txtSifre.Location = new System.Drawing.Point(207, 141);
             this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(205, 26);
+            this.txtSifre.PasswordChar = '*';
+            this.txtSifre.Size = new System.Drawing.Size(205, 30);
             this.txtSifre.TabIndex = 4;
             // 
             // btnKayitOl
@@ -166,7 +169,7 @@
             // 
             // KullaniciKayit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(562, 277);

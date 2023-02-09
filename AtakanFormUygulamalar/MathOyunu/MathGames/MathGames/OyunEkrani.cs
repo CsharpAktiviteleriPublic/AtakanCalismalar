@@ -134,6 +134,7 @@ namespace MathGames
                 MessageBox.Show(score.ToString());
                 SkorTablosu skorTablosu = new SkorTablosu();
                 skorTablosu.ShowDialog();
+                Hide();
             }
         }
         private void CorrectSoundPlayer(object sender, EventArgs e)

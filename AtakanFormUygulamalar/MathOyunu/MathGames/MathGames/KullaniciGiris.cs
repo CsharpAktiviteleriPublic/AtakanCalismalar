@@ -87,12 +87,17 @@ namespace MathGames
                 {
                     OyunEkrani oyunEkrani = new OyunEkrani();
                     
+
                     adSoyadK = uyeBilgisi[txtSifre.Text].Split(' ');
                     oyunEkrani.ad = adSoyadK[0];
                     oyunEkrani.soyad = adSoyadK[1];
                     oyunEkrani.kullaniciAdi = adSoyadK[2] ;
                     oyunEkrani.sifre = txtSifre.Text;
                     oyunEkrani.adSoyadID = ad+" "+soyad+" "+kullaniciAdi;
+                    SkorTablosu skorTablosu = new SkorTablosu();
+                    skorTablosu.ad = adSoyadK[0];
+                    skorTablosu.soyad = adSoyadK[1];
+
 
                     oyunEkrani.Show();
                     Hide();
@@ -100,12 +105,16 @@ namespace MathGames
                 else
                 {
                     MessageBox.Show("Şifre veya kullanıcı adı hatalıdır.");
+                    txtID.Clear();
+                    txtSifre.Clear();
                 }
 
             }
             else
             {
-                MessageBox.Show("Böyle bir şifre bulunamadı!");
+                MessageBox.Show("Şifre veya kullanıcı adı hatalıdır.");
+                txtID.Clear();
+                txtSifre.Clear();
             }
 
 
