@@ -12,7 +12,7 @@ namespace MathGames
 {
     public partial class SkorTablosu : Form
     {
-     
+
 
         public SkorTablosu()
         {
@@ -30,8 +30,19 @@ namespace MathGames
 
         private void btnTekrarOyna_Click(object sender, EventArgs e)
         {
-            
             Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = new DialogResult();
+            dr = MessageBox.Show("Çıkmak istediğinize eminmisiniz?", "UYARI", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+            {
+                Application.Exit();
+
+            }
+            
         }
     }
 }
