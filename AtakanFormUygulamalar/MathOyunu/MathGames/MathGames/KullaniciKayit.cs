@@ -18,13 +18,11 @@ namespace MathGames
         }
 
         private int sayac = 0;
-        KullaniciGiris kullaniciGiris = new KullaniciGiris();
-        
-
+        KullaniciGiris kullaniciGiris = new KullaniciGiris(); 
 
         private void KullaniciKayit_Load(object sender, EventArgs e)
         {
-
+            this.Icon = Properties.Resources.math;
             tmrLabelYanipSönme.Start();
         }
         private void tmrLabelYanipSönme_Tick(object sender, EventArgs e)

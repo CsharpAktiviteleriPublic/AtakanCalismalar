@@ -32,10 +32,11 @@ namespace MathGames
         int sum = 0;
         int userSum;
         public int score = 0;
-
+        
 
         private void OyunEkrani_Load(object sender, EventArgs e)
         {
+            this.Icon = Properties.Resources.math;
             
             lblHosgeldinAdSoyad.Text = $"Hoşgeldin {ad} {soyad} Başarılar!";
             IslemOlustur(num1, num2, islem);

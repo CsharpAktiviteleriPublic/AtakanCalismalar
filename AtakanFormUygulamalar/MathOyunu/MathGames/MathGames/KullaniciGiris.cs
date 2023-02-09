@@ -29,8 +29,11 @@ namespace MathGames
         public string adSoyadID = "";
 
 
+
         private void KullaniciGiris_Load(object sender, EventArgs e)
         {
+            this.Icon = Properties.Resources.math;
+
             grpGiris.Top = this.Height;
 
             welcomeMessage = "Bu programın kullanım amacı temel işlem bilgilerinizi hızlandırmak, sayısal işlemlerde seri düşünebilmenizi sağlamaktır. \n\nToplama Çıkarma ve Çarpma işlemlerini ne kadar hızlı çözüp cevaplarsanız, o kadar puan kazanırsınız!\n\nDenemek için lütfen aşağıdan giriş yapınız.\nEğer hesabınız yoksa öncelikle kayıt olunuz.!";

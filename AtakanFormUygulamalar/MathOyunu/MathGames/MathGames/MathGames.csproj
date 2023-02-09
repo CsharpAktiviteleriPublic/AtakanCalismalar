@@ -143,5 +143,11 @@
   <ItemGroup>
     <None Include="Resources\catgif.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chalkboard_icon-icons.com_54408.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,10 @@ namespace MathGames
         {
             InitializeComponent();
         }
+
+        private void SkorTablosu_Load(object sender, EventArgs e)
+        {
+            this.Icon = Properties.Resources.math;
+        }
     }
 }
