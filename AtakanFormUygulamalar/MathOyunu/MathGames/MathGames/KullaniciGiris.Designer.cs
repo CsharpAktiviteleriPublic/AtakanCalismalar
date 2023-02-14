@@ -135,7 +135,7 @@
             // 
             // tmrWelcome
             // 
-            this.tmrWelcome.Interval = 20;
+            this.tmrWelcome.Interval = 30;
             this.tmrWelcome.Tick += new System.EventHandler(this.tmrWelcome_Tick);
             // 
             // tmrMoveGroupBox

@@ -72,6 +72,7 @@ namespace MathGames
         private void linkKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             KullaniciKayit kullaniciKayit = new KullaniciKayit();
+            Hide();
             kullaniciKayit.Show();
         }
 

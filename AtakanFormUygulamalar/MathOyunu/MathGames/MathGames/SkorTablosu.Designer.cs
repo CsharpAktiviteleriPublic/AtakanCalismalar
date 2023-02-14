@@ -35,18 +35,22 @@
             // 
             // listBox1
             // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.listBox1.FormatString = "atakan bektas 123";
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(5, 10);
+            this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(921, 404);
+            this.listBox1.Size = new System.Drawing.Size(942, 478);
             this.listBox1.TabIndex = 0;
             // 
             // btnAnaSayfaDön
             // 
-            this.btnAnaSayfaDön.Location = new System.Drawing.Point(682, 420);
+            this.btnAnaSayfaDön.Location = new System.Drawing.Point(784, 420);
             this.btnAnaSayfaDön.Name = "btnAnaSayfaDön";
-            this.btnAnaSayfaDön.Size = new System.Drawing.Size(244, 45);
+            this.btnAnaSayfaDön.Size = new System.Drawing.Size(142, 45);
             this.btnAnaSayfaDön.TabIndex = 1;
             this.btnAnaSayfaDön.Text = "ANASAYFA";
             this.btnAnaSayfaDön.UseVisualStyleBackColor = true;
@@ -54,11 +58,11 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(428, 420);
+            this.button2.Location = new System.Drawing.Point(694, 420);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 45);
+            this.button2.Size = new System.Drawing.Size(84, 45);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Çıkış";
+            this.button2.Text = "ÇIKIŞ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -80,9 +84,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnAnaSayfaDön;
         private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }

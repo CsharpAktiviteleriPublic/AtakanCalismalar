@@ -133,6 +133,9 @@ namespace MathGames
                 tmrSure.Stop();
                 MessageBox.Show(score.ToString());
                 SkorTablosu skorTablosu = new SkorTablosu();
+                Label lbl = new Label();
+                lbl.Text = $"{ad} {soyad} puanı >>> {score}";
+                skorTablosu.listBox1.Controls.Add(lbl);
                 skorTablosu.ShowDialog();
                 Hide();
             }

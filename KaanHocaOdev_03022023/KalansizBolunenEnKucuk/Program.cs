@@ -8,8 +8,11 @@ namespace KalansizBolunenEnKucuk
 {
     internal class Program
     {
+        public string isim = "mert";
+
         static void Main(string[] args)
         {
+           
             Console.WriteLine("Lütfen başlangıç sayısı giriniz.");
             int start = int.Parse(Console.ReadLine());
             Console.WriteLine("Lütfen bitiş sayısı giriniz.");
@@ -18,20 +21,20 @@ namespace KalansizBolunenEnKucuk
             Console.ReadKey();
         }
 
-        private static int getSmallestNumber(int start, int stop)
+        private static int getSmallestNumber(int start2, int stop2)
         {
             int sayac = 0;
             int j = 1;
-            for (int i = stop; i < int.MaxValue; i += stop)
+            for (int i = stop2; i < int.MaxValue; i += stop2)
             {
-                for (j = start; j < stop; j++)
+                for (j = start2; j < stop2; j++)
                 {
                     if (i % j == 0)
                     {
                         sayac++;
                     }
                 }
-                if (sayac == stop - start) // 2. for'daki if'e her seferinde girdiyse: return i;
+                if (sayac == stop2 - start2) // 2. for'daki if'e her seferinde girdiyse: return i;
                 {
                     return i;
                 }
