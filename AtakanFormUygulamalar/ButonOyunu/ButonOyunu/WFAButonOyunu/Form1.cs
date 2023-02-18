@@ -93,6 +93,9 @@ namespace WFAButonOyunu
             {
                 btn.BackgroundImage = Properties.Resources.bomba;
                 lstSonuc.Items.Add(lblSonuc1.Text + " " + txtPlayer1.Text);
+
+
+
                 lblSonuc1.Visible = false;
                 lblSonuc2.Visible = false;
 
