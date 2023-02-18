@@ -118,6 +118,7 @@ namespace CemberClassModel
             // eğer cemberler eşitse, değilse (null referance exception hatasını önlemek için...)
 
         }
+        
 
     }
 }

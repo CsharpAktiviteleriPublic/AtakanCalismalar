@@ -83,11 +83,11 @@ namespace CemberClassModel
         public bool IcindeMi(Cember a)
         {
             bool sonuc = false, kucukMu = false;
-            kucukMu = a._yariCap < _yariCap ? true : false;
+            kucukMu = a._yariCap <= _yariCap ? true : false;
 
             if (kucukMu)
             {
-                double yaricapFarklari = _yariCap - a._yariCap;
+                double yaricapFarklari = Math.Abs(_yariCap - a._yariCap);
                 sonuc = Mesafe(a) <= yaricapFarklari ? true : false;
             }
             return sonuc;
