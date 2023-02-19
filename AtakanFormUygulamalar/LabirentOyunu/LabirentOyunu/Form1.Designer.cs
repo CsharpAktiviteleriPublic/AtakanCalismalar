@@ -276,12 +276,12 @@
             this.lblGoalKeeper.BackColor = System.Drawing.Color.Brown;
             this.lblGoalKeeper.Location = new System.Drawing.Point(1636, 102);
             this.lblGoalKeeper.Name = "lblGoalKeeper";
-            this.lblGoalKeeper.Size = new System.Drawing.Size(28, 88);
+            this.lblGoalKeeper.Size = new System.Drawing.Size(28, 217);
             this.lblGoalKeeper.TabIndex = 19;
             // 
             // tmrGoalKeeper
             // 
-            this.tmrGoalKeeper.Interval = 10;
+            this.tmrGoalKeeper.Interval = 20;
             this.tmrGoalKeeper.Tick += new System.EventHandler(this.tmrGoalKeeper_Tick);
             // 
             // Form1

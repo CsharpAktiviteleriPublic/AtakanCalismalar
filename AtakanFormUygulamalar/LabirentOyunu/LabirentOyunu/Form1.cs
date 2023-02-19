@@ -21,6 +21,7 @@ namespace LabirentOyunu
         int topHizi;
         int userScore = 0;
         int computerScore = 0;
+        int computerScoreBefore = 0;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -56,7 +57,7 @@ namespace LabirentOyunu
                     break;
                 case Keys.Space:
                     topHizi = 100;
-                    pbTop.Left = pbKarakter.Left+ pbKarakter.Width;
+                    pbTop.Left = pbKarakter.Left + pbKarakter.Width;
                     pbTop.Top = pbKarakter.Top + pbKarakter.Height - pbTop.Height;
                     pbTop.Visible = true;
                     tmrTop.Start();
@@ -75,45 +76,48 @@ namespace LabirentOyunu
                 else
                     pb.Left -= 3;
             }
-        }      
+        }
         private void tmrTop_Tick(object sender, EventArgs e)
         {
 
 
-            if (topHizi > 0 )
+            if (topHizi > 0)
             {
-                if (!(pbTop.Bounds.IntersectsWith(lblGoal.Bounds)))
-                {
-                    topHizi -= 1;
-                    pbTop.Left += topHizi;
+                if ((pbTop.Bounds.IntersectsWith(lblGoalKeeper.Bounds))) //kaleci kurtarırsa
+                {                    
+                    computerScore++;
+                    lblComputerScore.Text = computerScore.ToString();
+                    pbTop.Visible = false;
+                    tmrTop.Stop();
                 }
-                else
-                {                   
+
+                else if ((pbTop.Bounds.IntersectsWith(lblGoal.Bounds)))//gol olursa
+                {
                     userScore++;
                     lblUserScore.Text = (userScore).ToString();
                     pbTop.Visible = false;
                     tmrTop.Stop();
                 }
-                
-                
-            }
-            else
-            {
-               
-                pbTop.Visible = false;
-                tmrTop.Stop();
-            }
+
+                else // top giderken
+                {
+                   
+                    topHizi -= 1;
+                    pbTop.Left += topHizi;
+                }
+
+            }         
         }
 
-        int goalKeeperV = 5;
+        int goalKeeperV = 3;
         private void tmrGoalKeeper_Tick(object sender, EventArgs e)
         {
             lblGoalKeeper.Top += goalKeeperV;
-            if (lblGoalKeeper.Top+lblGoalKeeper.Height>=pnlAlan.Height || lblGoalKeeper.Top<=0)
+            if (lblGoalKeeper.Top + lblGoalKeeper.Height >= pnlAlan.Height || lblGoalKeeper.Top <= 0)
             {
                 goalKeeperV = goalKeeperV * -1;
             }
-            
+
         }
     }
 }
