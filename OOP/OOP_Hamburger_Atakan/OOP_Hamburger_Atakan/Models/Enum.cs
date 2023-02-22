@@ -13,15 +13,6 @@ namespace OOP_Hamburger_Atakan
             kucuk,
             orta,
             buyuk
-        }
-        enum Malzeme
-        {
-            ketcap,
-            hardal,
-            ranch,
-            mayonez,
-            bbq,
-            buffalo
-        }
+        } 
     }
 }

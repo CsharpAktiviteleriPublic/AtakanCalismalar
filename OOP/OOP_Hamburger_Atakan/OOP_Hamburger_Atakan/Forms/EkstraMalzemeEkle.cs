@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace OOP_Hamburger_Atakan
 {
-    public partial class MenuEkle : Form
+    public partial class EkstraMalzemeEkle : Form
     {
-        public MenuEkle()
+        public EkstraMalzemeEkle()
         {
             InitializeComponent();
+        }
+
+        private void btnMalzemeEkle_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

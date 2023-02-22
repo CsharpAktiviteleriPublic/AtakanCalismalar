@@ -18,20 +18,20 @@ namespace OOP_Hamburger_Atakan
            
         }
 
-        SiparisOlustur siparisOlustur = new SiparisOlustur();
-        SiparisBilgileri siparisBilgileri = new SiparisBilgileri();
-        MenuEkle menuEkle = new MenuEkle();
-        EkstraMalzemeEkle ekstraMalzemeEkle = new EkstraMalzemeEkle();
-
+        internal static SiparisOlustur siparisOlustur = new SiparisOlustur();
+        internal static SiparisBilgileri siparisBilgileri = new SiparisBilgileri();
+        internal static MenuEkle menuEkle = new MenuEkle();
+        internal static EkstraMalzemeEkle ekstraMalzemeEkle = new EkstraMalzemeEkle();
         private void MyMdiParent_Load(object sender, EventArgs e)
         {
             siparisOlustur.MdiParent = this;
-            siparisBilgileri.MdiParent = this;
+            siparisBilgileri.MdiParent = this;          
 
         }
 
         private void siparisOlusturToolStripMenuItem_Click(object sender, EventArgs e)
         {
+           
             siparisBilgileri.Hide();
             siparisOlustur.Show();
         }
@@ -45,6 +45,7 @@ namespace OOP_Hamburger_Atakan
         private void menuEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             menuEkle.ShowDialog();
+            
         }
 
         private void malzemeEkleToolStripMenuItem_Click(object sender, EventArgs e)
