@@ -5,11 +5,13 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace OOP_Hamburger_Atakan
 {
     internal class Fonksiyonlar
     {
+        private static decimal _siparisTutari; 
       
         public static void Ekle(Dictionary<string, decimal> dic, string malzemeAdi, decimal fiyat)
         {
@@ -22,23 +24,49 @@ namespace OOP_Hamburger_Atakan
                 dic.Add(malzemeAdi, fiyat);
                 System.Windows.Forms.MessageBox.Show("Menüye Eklendi.");
             }
-        }
-        private static decimal _siparisTutari; 
-       
-        public static string MenuAdiToTittleCase(string menuAdi)
+        }       
+        public static string MenuAdiToTitleCase(string menuAdi)
         {
             menuAdi = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(menuAdi).Trim();
             return menuAdi;
         }
-
-        public static decimal ToplamSiparisTutari(decimal menu, decimal boyut, decimal ekstra, int adet)
+        public static decimal ToplamSiparisTutariAl(decimal menu, decimal boyut, decimal ekstra, int adet)
         {
             _siparisTutari = (menu + boyut + ekstra) * adet;
             return _siparisTutari;
-        }
-        internal static void YuklemeleriYap()
+        }        
+        public static decimal EkstraMalzemelerFiyatiAl(FlowLayoutPanel flp)
         {
-
+            foreach (CheckBox item in flp.Controls)
+            {
+                if (item.Checked)
+                {
+                    Ekstra.MalzemeUcreti += Ekstra.malzemeler[item.Text];
+                }
+            }
+            return Ekstra.MalzemeUcreti;
         }
+        public static decimal BoyutFiyatiAl(GroupBox grp)
+        {
+            foreach (RadioButton item in grp.Controls)
+            {
+                if (item.Checked)
+                {
+                    Siparis.BoyutUcreti = Convert.ToDecimal(Enum.Parse(typeof(EnumClass.Boyut), item.Text.ToLower()));
+                }
+            }
+            return 0;
+        }
+        public static decimal MenuFiyatiAl(ComboBox comboBox)
+        {
+            Menuler.Ucret = Menuler.menuler[comboBox.SelectedItem.ToString()];
+            return Menuler.Ucret;
+        }        
+        public static int AdetFiyatAl(NumericUpDown num)
+        {
+            Siparis.Adet = (int)num.Value;
+            return Siparis.Adet;
+        }
+      
     }
 }

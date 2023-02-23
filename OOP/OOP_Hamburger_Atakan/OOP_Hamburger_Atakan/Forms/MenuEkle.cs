@@ -20,7 +20,7 @@ namespace OOP_Hamburger_Atakan
         private void btnMenuEkle_Click(object sender, EventArgs e)
         {
             
-            Fonksiyonlar.Ekle(Menuler.menuler, Fonksiyonlar.MenuAdiToTittleCase(txtMenuAdi.Text), numMenuFiyat.Value);          
+            Fonksiyonlar.Ekle(Menuler.menuler, Fonksiyonlar.MenuAdiToTitleCase(txtMenuAdi.Text), numMenuFiyat.Value);          
             
         }
     }

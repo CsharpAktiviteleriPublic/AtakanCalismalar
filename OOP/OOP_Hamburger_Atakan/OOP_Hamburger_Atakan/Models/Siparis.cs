@@ -8,11 +8,13 @@ namespace OOP_Hamburger_Atakan
 {
     internal class Siparis
     {
-        public static Dictionary<string,decimal> siparisler = new Dictionary<string,decimal>();
+        public static Dictionary<string, decimal> siparisler = new Dictionary<string, decimal>();
         public static int ToplamSiparisSayisi = 0;
-        public static decimal EkstraGelir= 0;
-        public static decimal SiparisTutari = 0;
-        
-        
+        public static decimal ToplamTutar = 0;
+        public static decimal MalzemeGelir = 0;
+        public static int Adet = 0;
+        public static decimal BoyutUcreti = 0;
+
+
     }
 }
