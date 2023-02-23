@@ -10,10 +10,7 @@ namespace OOP_Hamburger_Atakan
 {
     internal class Fonksiyonlar
     {
-        public static void MenuEkle()
-        {
-
-        }
+      
         public static void Ekle(Dictionary<string, decimal> dic, string malzemeAdi, decimal fiyat)
         {
             if (malzemeAdi == string.Empty || dic.Keys.Contains(malzemeAdi)) // Malzeme adi empty değilse ve fiyat pozitif ise,
@@ -26,7 +23,7 @@ namespace OOP_Hamburger_Atakan
                 System.Windows.Forms.MessageBox.Show("Menüye Eklendi.");
             }
         }
-
+        private static decimal _siparisTutari; 
        
         public static string MenuAdiToTittleCase(string menuAdi)
         {
@@ -34,6 +31,11 @@ namespace OOP_Hamburger_Atakan
             return menuAdi;
         }
 
+        public static decimal ToplamSiparisTutari(decimal menu, decimal boyut, decimal ekstra, int adet)
+        {
+            _siparisTutari = (menu + boyut + ekstra) * adet;
+            return _siparisTutari;
+        }
         internal static void YuklemeleriYap()
         {
 

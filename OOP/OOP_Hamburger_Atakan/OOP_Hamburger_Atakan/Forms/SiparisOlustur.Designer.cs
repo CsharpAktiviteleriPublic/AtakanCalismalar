@@ -88,7 +88,7 @@
             this.rbtnKucuk.Size = new System.Drawing.Size(76, 24);
             this.rbtnKucuk.TabIndex = 3;
             this.rbtnKucuk.TabStop = true;
-            this.rbtnKucuk.Text = "Küçük";
+            this.rbtnKucuk.Text = "Kucuk";
             this.rbtnKucuk.UseVisualStyleBackColor = true;
             // 
             // rbtnOrta
@@ -110,7 +110,7 @@
             this.rbtnBuyuk.Size = new System.Drawing.Size(76, 24);
             this.rbtnBuyuk.TabIndex = 3;
             this.rbtnBuyuk.TabStop = true;
-            this.rbtnBuyuk.Text = "Büyük";
+            this.rbtnBuyuk.Text = "Buyuk";
             this.rbtnBuyuk.UseVisualStyleBackColor = true;
             // 
             // grpHamburgerBoyut

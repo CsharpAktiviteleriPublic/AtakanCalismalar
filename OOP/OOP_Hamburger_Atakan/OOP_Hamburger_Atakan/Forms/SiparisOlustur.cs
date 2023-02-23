@@ -60,7 +60,26 @@ namespace OOP_Hamburger_Atakan
 
         private void cbMenuler_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
+            decimal menuUcreti = Menuler.menuler[cbMenuler.SelectedItem.ToString()];
+            decimal boyutUcreti = 0;
+            foreach (RadioButton item in grpHamburgerBoyut.Controls)
+            {
+                if (item.Checked)
+                {
+                    boyutUcreti = Convert.ToDecimal(Enum.Parse(typeof(EnumClass.Boyut), item.Text.ToLower()));
+                    MessageBox.Show(boyutUcreti.ToString());
+                }
+            }
+
+            foreach (CheckBox item in flpEkstraMalzemeler.Controls)
+            {                
+                if (item.Checked)
+                {
+                    Ekstra.MalzemeUcreti += Ekstra.malzemeler[item.Text];
+                }
+            }
+
         }
     }
 }

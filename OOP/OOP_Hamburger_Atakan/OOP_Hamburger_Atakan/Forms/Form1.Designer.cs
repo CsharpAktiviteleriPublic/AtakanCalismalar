@@ -63,14 +63,14 @@
             // siparisOlusturToolStripMenuItem
             // 
             this.siparisOlusturToolStripMenuItem.Name = "siparisOlusturToolStripMenuItem";
-            this.siparisOlusturToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.siparisOlusturToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.siparisOlusturToolStripMenuItem.Text = "Siparis Olustur";
             this.siparisOlusturToolStripMenuItem.Click += new System.EventHandler(this.siparisOlusturToolStripMenuItem_Click);
             // 
             // siparisBilgileriToolStripMenuItem
             // 
             this.siparisBilgileriToolStripMenuItem.Name = "siparisBilgileriToolStripMenuItem";
-            this.siparisBilgileriToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.siparisBilgileriToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.siparisBilgileriToolStripMenuItem.Text = "Siparis Bilgileri";
             this.siparisBilgileriToolStripMenuItem.Click += new System.EventHandler(this.siparisBilgileriToolStripMenuItem_Click);
             // 
@@ -109,6 +109,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MyMdiParent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MyMdiForm";
             this.Load += new System.EventHandler(this.MyMdiParent_Load);
             this.menuStrip1.ResumeLayout(false);

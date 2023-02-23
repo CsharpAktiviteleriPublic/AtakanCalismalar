@@ -53,7 +53,7 @@
     <Compile Include="Forms\EkstraMalzemeEkle.Designer.cs">
       <DependentUpon>EkstraMalzemeEkle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\Enum.cs" />
+    <Compile Include="Models\EnumClass.cs" />
     <Compile Include="Models\Fonksiyonlar.cs" />
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>

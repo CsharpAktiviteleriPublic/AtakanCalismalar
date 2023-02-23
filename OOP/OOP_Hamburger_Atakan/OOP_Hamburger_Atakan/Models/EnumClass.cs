@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace OOP_Hamburger_Atakan
 {
-    internal class Enum
+    internal class EnumClass
     {
-        enum Boyut
+        public enum Boyut
         {
-            kucuk,
-            orta,
-            buyuk
+            kucuk=0,
+            orta=5,
+            buyuk=10
         } 
     }
 }
