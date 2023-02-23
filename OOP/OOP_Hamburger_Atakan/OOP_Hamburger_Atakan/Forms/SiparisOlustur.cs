@@ -22,28 +22,9 @@ namespace OOP_Hamburger_Atakan
         {
             FormBorderStyle = FormBorderStyle.None;
             this.Dock = DockStyle.Fill;
-            SoslariYukle();
-            MenuleriYukle();
-        }
-
-        private void SoslariYukle()
-        {
-            int i = 0;
-            foreach (var sosAdi in Ekstra.malzemeler)
-            {
-                CheckBox chc = new CheckBox();
-                chc.Name = "chc" + sosAdi.Key.First().ToString().ToUpper();
-                flpEkstraMalzemeler.Controls.Add(new CheckBox());
-            }
-        }
-
-        private void MenuleriYukle()
-        {
-            foreach (var menuAdi in Menuler.menuler)
-            {
-                cbMenuler.Items.Add(menuAdi.Key);
-            }
-        }
+            Fonksiyonlar.SoslariYukle(flpEkstraMalzemeler);
+            Fonksiyonlar.MenuleriYukle(cbMenuler);
+        }       
 
         private void btnSiparisEkle_Click(object sender, EventArgs e)
         {

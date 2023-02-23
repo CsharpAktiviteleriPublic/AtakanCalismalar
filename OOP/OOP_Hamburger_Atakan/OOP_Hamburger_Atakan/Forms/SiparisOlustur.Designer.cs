@@ -138,7 +138,7 @@
             this.chcKetcap.Name = "chcKetcap";
             this.chcKetcap.Size = new System.Drawing.Size(84, 24);
             this.chcKetcap.TabIndex = 5;
-            this.chcKetcap.Text = "Ketçap";
+            this.chcKetcap.Text = "Ketcap";
             this.chcKetcap.UseVisualStyleBackColor = true;
             this.chcKetcap.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
@@ -196,9 +196,9 @@
             this.chcBuffalo.Location = new System.Drawing.Point(180, 49);
             this.chcBuffalo.Margin = new System.Windows.Forms.Padding(5);
             this.chcBuffalo.Name = "chcBuffalo";
-            this.chcBuffalo.Size = new System.Drawing.Size(84, 24);
+            this.chcBuffalo.Size = new System.Drawing.Size(86, 24);
             this.chcBuffalo.TabIndex = 5;
-            this.chcBuffalo.Text = "Bufallo";
+            this.chcBuffalo.Text = "Buffalo";
             this.chcBuffalo.UseVisualStyleBackColor = true;
             this.chcBuffalo.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 

@@ -24,7 +24,25 @@ namespace OOP_Hamburger_Atakan
                 dic.Add(malzemeAdi, fiyat);
                 System.Windows.Forms.MessageBox.Show("Menüye Eklendi.");
             }
-        }       
+        }
+
+        internal static void MenuleriYukle(ComboBox cb)
+        {
+            foreach (var menuAdi in Menuler.menuler)
+            {
+                cb.Items.Add(menuAdi.Key);
+            }
+        }
+
+        public static void SoslariYukle(FlowLayoutPanel flp)
+        {
+            foreach (var sosAdi in Ekstra.malzemeler)
+            {
+                CheckBox chc = new CheckBox();
+                chc.Name = "chc" + MenuAdiToTitleCase(sosAdi.Key).Replace(" ", "");
+                flp.Controls.Add(new CheckBox());
+            }
+        }
         public static string MenuAdiToTitleCase(string menuAdi)
         {
             menuAdi = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(menuAdi).Trim();
@@ -37,6 +55,7 @@ namespace OOP_Hamburger_Atakan
         }        
         public static decimal EkstraMalzemelerFiyatiAl(FlowLayoutPanel flp)
         {
+            Ekstra.MalzemeUcreti = 0;
             foreach (CheckBox item in flp.Controls)
             {
                 if (item.Checked)
