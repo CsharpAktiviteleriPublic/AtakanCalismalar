@@ -74,6 +74,8 @@ namespace OOP_Hamburger_Atakan
 
             return lbl.Text;
         }
+
+         
       
     }
 }
