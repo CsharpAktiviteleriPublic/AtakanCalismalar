@@ -77,7 +77,7 @@
             this.cbMenuler.Name = "cbMenuler";
             this.cbMenuler.Size = new System.Drawing.Size(342, 28);
             this.cbMenuler.TabIndex = 2;
-            this.cbMenuler.SelectedIndexChanged += new System.EventHandler(this.cbMenuler_SelectedIndexChanged);
+            this.cbMenuler.SelectedIndexChanged += new System.EventHandler(this.SiparisTutariAl);
             this.cbMenuler.Click += new System.EventHandler(this.cbMenuler_Click);
             // 
             // rbtnKucuk
@@ -90,6 +90,7 @@
             this.rbtnKucuk.TabStop = true;
             this.rbtnKucuk.Text = "Kucuk";
             this.rbtnKucuk.UseVisualStyleBackColor = true;
+            this.rbtnKucuk.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // rbtnOrta
             // 
@@ -101,6 +102,7 @@
             this.rbtnOrta.TabStop = true;
             this.rbtnOrta.Text = "Orta";
             this.rbtnOrta.UseVisualStyleBackColor = true;
+            this.rbtnOrta.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // rbtnBuyuk
             // 
@@ -112,6 +114,7 @@
             this.rbtnBuyuk.TabStop = true;
             this.rbtnBuyuk.Text = "Buyuk";
             this.rbtnBuyuk.UseVisualStyleBackColor = true;
+            this.rbtnBuyuk.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // grpHamburgerBoyut
             // 
@@ -137,6 +140,7 @@
             this.chcKetcap.TabIndex = 5;
             this.chcKetcap.Text = "Ketçap";
             this.chcKetcap.UseVisualStyleBackColor = true;
+            this.chcKetcap.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // chcHardal
             // 
@@ -148,6 +152,7 @@
             this.chcHardal.TabIndex = 5;
             this.chcHardal.Text = "Hardal";
             this.chcHardal.UseVisualStyleBackColor = true;
+            this.chcHardal.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // chcMayonez
             // 
@@ -159,6 +164,7 @@
             this.chcMayonez.TabIndex = 5;
             this.chcMayonez.Text = "Mayonez";
             this.chcMayonez.UseVisualStyleBackColor = true;
+            this.chcMayonez.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // chcBBQ
             // 
@@ -170,6 +176,7 @@
             this.chcBBQ.TabIndex = 5;
             this.chcBBQ.Text = "BBQ";
             this.chcBBQ.UseVisualStyleBackColor = true;
+            this.chcBBQ.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // chcRanch
             // 
@@ -181,6 +188,7 @@
             this.chcRanch.TabIndex = 5;
             this.chcRanch.Text = "Ranch";
             this.chcRanch.UseVisualStyleBackColor = true;
+            this.chcRanch.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // chcBuffalo
             // 
@@ -192,6 +200,7 @@
             this.chcBuffalo.TabIndex = 5;
             this.chcBuffalo.Text = "Bufallo";
             this.chcBuffalo.UseVisualStyleBackColor = true;
+            this.chcBuffalo.CheckedChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // label3
             // 
@@ -224,6 +233,7 @@
             0,
             0,
             0});
+            this.numAdet.ValueChanged += new System.EventHandler(this.SiparisTutariAl);
             // 
             // pbHamburger
             // 

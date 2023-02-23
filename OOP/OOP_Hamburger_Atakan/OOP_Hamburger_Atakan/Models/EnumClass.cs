@@ -12,7 +12,8 @@ namespace OOP_Hamburger_Atakan
         {
             kucuk=0,
             orta=5,
-            buyuk=10
+            buyuk=10,
+            
         } 
     }
 }

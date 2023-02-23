@@ -49,6 +49,7 @@ namespace OOP_Hamburger_Atakan
 
         }
 
+
         private void cbMenuler_Click(object sender, EventArgs e)
         {
             cbMenuler.Items.Clear();
@@ -57,30 +58,20 @@ namespace OOP_Hamburger_Atakan
                 cbMenuler.Items.Add(menuAdi.Key);
             }
         }
-
-        private void cbMenuler_SelectedIndexChanged(object sender, EventArgs e)
+  
+        private void SiparisTutariAl(object sender, EventArgs e)
         {
             Siparis.Adet = Fonksiyonlar.AdetFiyatAl(numAdet);
+
             Menuler.Ucret = Fonksiyonlar.MenuFiyatiAl(cbMenuler);
+
             Siparis.BoyutUcreti = Fonksiyonlar.BoyutFiyatiAl(grpHamburgerBoyut);
+
             Ekstra.MalzemeUcreti = Fonksiyonlar.EkstraMalzemelerFiyatiAl(flpEkstraMalzemeler);
+
             Siparis.ToplamTutar = Fonksiyonlar.ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet);
 
-            //foreach (RadioButton item in grpHamburgerBoyut.Controls)
-            //{
-            //    if (item.Checked)
-            //    {
-            //        MessageBox.Show(Siparis.BoyutUcreti.ToString());
-            //    }
-            //}
-            //----------------------------------------------------------------------------
-            //foreach (CheckBox item in flpEkstraMalzemeler.Controls)
-            //{
-            //    if (item.Checked)
-            //    {
-            //        Ekstra.MalzemeUcreti += Ekstra.malzemeler[item.Text];
-            //    }
-            //}
+            lblToplamTutar.Text = Fonksiyonlar.LabelFiyatAl(lblToplamTutar);
 
         }
     }

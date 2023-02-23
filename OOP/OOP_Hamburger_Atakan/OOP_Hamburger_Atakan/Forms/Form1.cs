@@ -25,7 +25,7 @@ namespace OOP_Hamburger_Atakan
         private void MyMdiParent_Load(object sender, EventArgs e)
         {
             siparisOlustur.MdiParent = this;
-            siparisBilgileri.MdiParent = this;          
+            siparisBilgileri.MdiParent = this;         
 
         }
 

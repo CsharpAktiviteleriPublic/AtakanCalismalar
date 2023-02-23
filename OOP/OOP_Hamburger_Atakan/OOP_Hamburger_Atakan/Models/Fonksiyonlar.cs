@@ -53,9 +53,10 @@ namespace OOP_Hamburger_Atakan
                 if (item.Checked)
                 {
                     Siparis.BoyutUcreti = Convert.ToDecimal(Enum.Parse(typeof(EnumClass.Boyut), item.Text.ToLower()));
+                    break;
                 }
             }
-            return 0;
+            return Siparis.BoyutUcreti;
         }
         public static decimal MenuFiyatiAl(ComboBox comboBox)
         {
@@ -66,6 +67,12 @@ namespace OOP_Hamburger_Atakan
         {
             Siparis.Adet = (int)num.Value;
             return Siparis.Adet;
+        }
+        public static string LabelFiyatAl(Label lbl)
+        {
+            lbl.Text = ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet).ToString();
+
+            return lbl.Text;
         }
       
     }
