@@ -18,33 +18,22 @@ namespace OOP_Hamburger_Atakan
             InitializeComponent();
         }
 
+       
         private void SiparisOlustur_Load(object sender, EventArgs e)
         {
 
             Fonksiyonlar.FormDuzenle(this);
             Fonksiyonlar.SoslariYukle(flpEkstraMalzemeler, Ekstra.malzemeler);
             Fonksiyonlar.MenuleriYukle(cbMenuler, Menuler.menuler);
-        }
+        } //Form Düzenleme-Sos ve menülerin Yüklenmesi yapıldı..
+
+
         private void btnSiparisEkle_Click(object sender, EventArgs e)
         {
-            ToplamSiparisMesaji();
-        }
-        private void ToplamSiparisMesaji()
-        {
-            DialogResult dr = MessageBox.Show($"Toplam Sipariş Tutarı : {lblToplamTutar.Text} ₺\nSatın almayı tamamlamak ister misiniz? ", "Sipariş Bilgisi", MessageBoxButtons.YesNo);
+            Fonksiyonlar.ToplamSiparisMesaji(lblToplamTutar);
+        }        
 
-
-            if (dr == DialogResult.Yes)
-            {
-                ListeEklemeBicimi();
-
-            }
-            else
-            {
-                MessageBox.Show("İptal Edildi!");
-            }
-        }
-        private void ListeEklemeBicimi()
+        public void ListeEklemeBicimi()
         {
             Fonksiyonlar.SecilenBoyutAdi(grpHamburgerBoyut);
             Fonksiyonlar.SecilenMalzemeAdlari(flpEkstraMalzemeler);
@@ -54,14 +43,15 @@ namespace OOP_Hamburger_Atakan
             Siparis.Ciro += Fonksiyonlar.ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet);
             Fonksiyonlar.SiparisListeEkle(cbMenuler, lstSiparisler);
         }
+
         private void cbMenuler_Click(object sender, EventArgs e)
         {
             Fonksiyonlar.MenuleriYukle(cbMenuler, Menuler.menuler);
         }
+
         public void SiparisTutariAl(object sender, EventArgs e)
-        {           
-               
-            btnSiparisiTamamla.Enabled = true;    
+        {
+            Fonksiyonlar.ButonEnableTrue(btnSiparisiTamamla);
             Siparis.Adet = Fonksiyonlar.AdetFiyatAl(numAdet);
             Menuler.Ucret = Fonksiyonlar.MenuFiyatiAl(cbMenuler);
             Siparis.BoyutUcreti = Fonksiyonlar.BoyutFiyatiAl(grpHamburgerBoyut);
@@ -69,11 +59,12 @@ namespace OOP_Hamburger_Atakan
             Ekstra.MalzemeUcreti = Fonksiyonlar.EkstraMalzemelerFiyatiAl(flpEkstraMalzemeler);
             Fonksiyonlar.LabelFiyatYazdir(lblToplamTutar);
         }
+
         private void btnSiparisiTamamla_Click(object sender, EventArgs e)
         {
-            btnSiparisiTamamla.Enabled = false;
+            Fonksiyonlar.ButonEnableFalse(btnSiparisiTamamla);
             MyMdiParent.siparisBilgileri.lstSiparisler.Items.AddRange(lstSiparisler.Items);
-            lstSiparisler.Items.Clear();
+            Fonksiyonlar.ListeTemizle(lstSiparisler);
             Fonksiyonlar.MalzemeUcretleriDefaultAl();
             MyMdiParent.siparisBilgileri.Show();
         }

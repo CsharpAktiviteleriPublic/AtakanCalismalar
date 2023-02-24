@@ -39,6 +39,7 @@ namespace OOP_Hamburger_Atakan
             }
         }
 
+
         /// <summary>
         /// Gönderilen Combobax itemlarına dictionary Key değerlerini ekler.
         /// </summary>
@@ -52,6 +53,7 @@ namespace OOP_Hamburger_Atakan
                 cb.Items.Add(menuAdi.Key);
             }
         }
+
 
         /// <summary>
         /// Flowlayout temizler sonra dictionary'deki elemanları checkbox oluşturarak itemlarına ekler.
@@ -73,6 +75,7 @@ namespace OOP_Hamburger_Atakan
 
         }
 
+
         /// <summary>
         /// Oluşturulan checkbox eventini,SiparisTutariAl Metoduna gönderir.
         /// </summary>
@@ -82,6 +85,7 @@ namespace OOP_Hamburger_Atakan
         {
             MyMdiParent.siparisOlustur.SiparisTutariAl(sender, e);
         }
+
 
         /// <summary>
         /// Gönderilen String ifadeyi ToTitleCase ile düzenler ve Trimler.
@@ -93,6 +97,7 @@ namespace OOP_Hamburger_Atakan
             menuAdi = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(menuAdi).Trim();
             return menuAdi;
         }
+
 
         /// <summary>
         /// Menü fiyatı + Boyut Farkı + Ekstra Malzeme ücretini toplayıp Adet ile çarpar.
@@ -107,6 +112,7 @@ namespace OOP_Hamburger_Atakan
             SiparisTutari = (menu + boyut + ekstra) * adet;
             return SiparisTutari;
         }
+
 
         /// <summary>
         /// Gönderilen FlowLayoutPanel içerisindeki CheckBox'lardan seçili olanları kontrol eder. 
@@ -128,6 +134,7 @@ namespace OOP_Hamburger_Atakan
             }
             return Ekstra.MalzemeUcreti;
         }
+
 
         /// <summary>
         /// GroupBox içindeki RadioButtonları kontrol eder. Seçili olanın değerini Enum Class'ından alır.
@@ -154,7 +161,7 @@ namespace OOP_Hamburger_Atakan
         /// <param name="comboBox"></param>
         /// <returns>Menüler Class'ından ücret döndürmektedir.</returns>
         public static decimal MenuFiyatiAl(ComboBox comboBox)
-        {
+        {            
             if (comboBox.SelectedItem != null)
             {
                 Menuler.Ucret = Menuler.menuler[comboBox.SelectedItem.ToString()];
@@ -162,24 +169,36 @@ namespace OOP_Hamburger_Atakan
             return Menuler.Ucret;
         }
 
+
+        /// <summary>
+        /// Gönderilen NumericUpDown'un fiyatını Siparis Adet'ine gönderir.
+        /// </summary>
+        /// <param name="num"></param>
+        /// <returns>(int)Siparis Adet</returns>
         public static int AdetFiyatAl(NumericUpDown num)
         {
             Siparis.Adet = (int)num.Value;
             return Siparis.Adet;
         }
 
+
+        /// <summary>
+        /// Gönderilen Label'a ToplamSiparisTutariAl metodundan 
+        /// </summary>
+        /// <param name="lbl"></param>
+        /// <returns>String</returns>
         public static string LabelFiyatAl(Label lbl)
         {
             lbl.Text = ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet).ToString();
 
             return lbl.Text;
-        }
+        }     
 
-        public static void ListBoxEkle(ListBox lst, Dictionary<string, decimal> dic)
-        {
 
-        }
-
+        /// <summary>
+        /// Gönderilen FlowLayoutPanel içindeki checkbox'lardan checked olanların text'ini secilen malzemelere gönderir.   
+        /// </summary>
+        /// <param name="flp"></param>
         public static void SecilenMalzemeAdlari(FlowLayoutPanel flp)
         {
             Ekstra.SecilenMalzemeler = "";
@@ -192,12 +211,23 @@ namespace OOP_Hamburger_Atakan
             }
         }
 
+
+        /// <summary>
+        /// ListBox'a sipariş formatında item ekler.
+        /// </summary>
+        /// <param name="cbMenuler"></param>
+        /// <param name="lstSiparisler"></param>
         public static void SiparisListeEkle(ComboBox cbMenuler, ListBox lstSiparisler)
         {
             Siparis.listeMetinFormat = $"{cbMenuler.SelectedItem} x {Siparis.Adet} Adet x {Siparis.boyutAdi} Boy x ({Ekstra.SecilenMalzemeler})";
             lstSiparisler.Items.Add(Siparis.listeMetinFormat);
         }
 
+
+        /// <summary>
+        /// GroupBox'taki seçili olan RadioButton'un textini Boyut Adina eşitler.
+        /// </summary>
+        /// <param name="grpHamburgerBoyut"></param>
         public static void SecilenBoyutAdi(GroupBox grpHamburgerBoyut)
         {
             foreach (RadioButton item in grpHamburgerBoyut.Controls)
@@ -209,6 +239,10 @@ namespace OOP_Hamburger_Atakan
             }
         }
 
+
+        /// <summary>
+        /// Önceden verilen siparişlerin ücretlerini sıfırlar.
+        /// </summary>
         public static void MalzemeUcretleriDefaultAl()
         {
             Siparis.Adet = 0;
@@ -218,17 +252,35 @@ namespace OOP_Hamburger_Atakan
             Ekstra.MalzemeUcreti = 0;
         }
 
+
+        /// <summary>
+        /// Gönderilen formun Dock özelliği Fill yapar ve BorderStyle None olur.
+        /// </summary>
+        /// <param name="frm"></param>
         public static void FormDuzenle(Form frm)
         {
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
         }
 
+
+        /// <summary>
+        /// Gönderilen label'a sipariş fiyatını yazdırır.
+        /// </summary>
+        /// <param name="lblToplamTutar"></param>
         public static void LabelFiyatYazdir(Label lblToplamTutar)
         {
             lblToplamTutar.Text = Fonksiyonlar.LabelFiyatAl(lblToplamTutar);
         }
 
+
+        /// <summary>
+        /// Gönderilen label'a sipariş fiyatını yazdırır.
+        /// </summary>
+        /// <param name="lblCiro"></param>
+        /// <param name="lblEkstraMalGeliri"></param>
+        /// <param name="lblSiparisSayisi"></param>
+        /// <param name="lblUrunAdedi"></param>
         public static void LabelFiyatYazdir(Label lblCiro, Label lblEkstraMalGeliri, Label lblSiparisSayisi, Label lblUrunAdedi)
         {
             lblCiro.Text = Siparis.Ciro.ToString();
@@ -238,7 +290,59 @@ namespace OOP_Hamburger_Atakan
         }
 
 
+        /// <summary>
+        /// Gönderilen butonun Enable'ını true yapar.
+        /// </summary>
+        /// <param name="btnSiparisiTamamla"></param>
+        public static void ButonEnableTrue(System.Windows.Forms.Button btnSiparisiTamamla)
+        {
+            btnSiparisiTamamla.Enabled = true;
+
+        }
 
 
+        /// <summary>
+        /// Gönderilen butonun Enable'ını false yapar.
+        /// </summary>
+        /// <param name="btnSiparisiTamamla"></param>
+        public static void ButonEnableFalse(System.Windows.Forms.Button btnSiparisiTamamla)
+        {
+            btnSiparisiTamamla.Enabled = false;
+        }
+
+
+        /// <summary>
+        /// Gönderilen listenin itemlarını temizler.
+        /// </summary>
+        /// <param name="lstSiparisler"></param>
+        internal static void ListeTemizle(ListBox lstSiparisler)
+        {
+            lstSiparisler.Items.Clear();
+        }
+
+
+        /// <summary>
+        /// Gönderilen Toplam Tutar'ı MessageBox'ta Yes-No Formatında gösterir, kullanıcıya emin misin sorusu sorar.
+        /// </summary>
+        /// <param name="lblToplamTutar"></param>
+        internal static void ToplamSiparisMesaji(Label lblToplamTutar)
+        {
+            DialogResult dr = MessageBox.Show($"Toplam Sipariş Tutarı : {lblToplamTutar.Text} ₺\nSatın almayı tamamlamak ister misiniz? ", "Sipariş Bilgisi", MessageBoxButtons.YesNo);
+
+
+            if (dr == DialogResult.Yes)
+            {
+                MyMdiParent.siparisOlustur.ListeEklemeBicimi();
+            }
+            else
+            {
+                MessageBox.Show("İptal Edildi!");
+            }
+        }
+
+        public static void ListBoxEkle(ListBox lst, Dictionary<string, decimal> dic)
+        {
+
+        }
     }
 }
