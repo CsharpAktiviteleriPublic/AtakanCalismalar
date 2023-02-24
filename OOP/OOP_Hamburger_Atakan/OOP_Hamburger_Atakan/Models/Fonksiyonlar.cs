@@ -29,6 +29,7 @@ namespace OOP_Hamburger_Atakan
         /// <param name="fiyat"></param>
         public static void Ekle(Dictionary<string, decimal> dic, string malzemeAdi, decimal fiyat)
         {
+            malzemeAdi = MenuAdiToTitleCase(malzemeAdi);
             if (malzemeAdi == string.Empty || dic.Keys.Contains(malzemeAdi))
             {
                 YanlisSesiCal();
@@ -36,9 +37,8 @@ namespace OOP_Hamburger_Atakan
             }
             else
             {
-                malzemeAdi = MenuAdiToTitleCase(malzemeAdi);
                 dic.Add(malzemeAdi, fiyat);
-                DogruSesiCal();                
+                DogruSesiCal();
                 System.Windows.Forms.MessageBox.Show("Ekleme Başarılı.!");
             }
         }
@@ -49,7 +49,7 @@ namespace OOP_Hamburger_Atakan
         public static void DogruSesiCal()
         {
             SoundPlayer soundPlayer = new SoundPlayer();
-            System.IO.Stream str = Properties.Resources.collect_5930; 
+            System.IO.Stream str = Properties.Resources.collect_5930;
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
             snd.Play();
         }
@@ -61,7 +61,7 @@ namespace OOP_Hamburger_Atakan
         public static void YanlisSesiCal()
         {
             SoundPlayer soundPlayer = new SoundPlayer();
-            System.IO.Stream str = Properties.Resources.wrong_answer_126515; 
+            System.IO.Stream str = Properties.Resources.wrong_answer_126515;
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
             snd.Play();
         }
@@ -188,7 +188,7 @@ namespace OOP_Hamburger_Atakan
         /// <param name="comboBox"></param>
         /// <returns>Menüler Class'ından ücret döndürmektedir.</returns>
         public static decimal MenuFiyatiAl(ComboBox comboBox)
-        {            
+        {
             if (comboBox.SelectedItem != null)
             {
                 Menuler.Ucret = Menuler.menuler[comboBox.SelectedItem.ToString()];
@@ -219,7 +219,7 @@ namespace OOP_Hamburger_Atakan
             lbl.Text = ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet).ToString();
 
             return lbl.Text;
-        }     
+        }
 
 
         /// <summary>
