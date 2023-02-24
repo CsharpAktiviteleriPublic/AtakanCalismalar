@@ -16,10 +16,8 @@ namespace OOP_Hamburger_Atakan
         {
             InitializeComponent();
 
-        }
-        
-        
-        
+        }       
+                
         internal static SiparisOlustur siparisOlustur = new SiparisOlustur();
         internal static SiparisBilgileri siparisBilgileri = new SiparisBilgileri();
         internal static MenuEkle menuEkle = new MenuEkle();
