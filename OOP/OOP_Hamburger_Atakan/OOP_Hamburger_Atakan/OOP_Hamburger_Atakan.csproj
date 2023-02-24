@@ -127,5 +127,11 @@
   <ItemGroup>
     <None Include="Resources\hamburger1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\collect-5930.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong-answer-126515.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

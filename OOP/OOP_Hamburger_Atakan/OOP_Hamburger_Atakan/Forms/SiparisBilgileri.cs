@@ -20,13 +20,9 @@ namespace OOP_Hamburger_Atakan
         private void SiparisBilgileri_Load(object sender, EventArgs e)
         {
             Fonksiyonlar.FormDuzenle(this);
-            Fonksiyonlar.LabelFiyatYazdir(lblCiro, lblEkstraMalGeliri, lblSiparisSayisi,lblUrunAdedi); ;
-      
+            Fonksiyonlar.LabelFiyatYazdir(lblCiro, lblEkstraMalGeliri, lblSiparisSayisi,lblUrunAdedi);      
         }
 
-        private void SiparisBilgileri_Load_1(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

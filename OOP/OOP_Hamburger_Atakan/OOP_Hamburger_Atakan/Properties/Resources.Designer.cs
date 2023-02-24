@@ -61,6 +61,15 @@ namespace OOP_Hamburger_Atakan.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream collect_5930 {
+            get {
+                return ResourceManager.GetStream("collect_5930", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap hamburger {
@@ -77,6 +86,15 @@ namespace OOP_Hamburger_Atakan.Properties {
             get {
                 object obj = ResourceManager.GetObject("hamburger1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream wrong_answer_126515 {
+            get {
+                return ResourceManager.GetStream("wrong_answer_126515", resourceCulture);
             }
         }
     }

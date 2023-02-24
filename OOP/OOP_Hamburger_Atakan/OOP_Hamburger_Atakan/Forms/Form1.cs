@@ -24,7 +24,7 @@ namespace OOP_Hamburger_Atakan
         internal static SiparisBilgileri siparisBilgileri = new SiparisBilgileri();
         internal static MenuEkle menuEkle = new MenuEkle();
         internal static EkstraMalzemeEkle ekstraMalzemeEkle = new EkstraMalzemeEkle();
-        private void MyMdiParent_Load(object sender, EventArgs e)
+        private void MyMdiParent_Load(object sender, EventArgs e) 
         {    
             siparisOlustur.MdiParent = this;
             siparisBilgileri.MdiParent = this;

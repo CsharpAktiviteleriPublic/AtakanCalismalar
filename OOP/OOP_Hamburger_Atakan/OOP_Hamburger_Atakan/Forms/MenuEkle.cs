@@ -21,7 +21,7 @@ namespace OOP_Hamburger_Atakan
         {
             
             Fonksiyonlar.Ekle(Menuler.menuler, Fonksiyonlar.MenuAdiToTitleCase(txtMenuAdi.Text), numMenuFiyat.Value);        
-           
+          
             
         }
 

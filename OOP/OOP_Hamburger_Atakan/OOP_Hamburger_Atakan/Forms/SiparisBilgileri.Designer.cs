@@ -190,7 +190,7 @@
             this.Name = "SiparisBilgileri";
             this.Text = "Siparis Bilgileri";
             this.Activated += new System.EventHandler(this.SiparisBilgileri_Load);
-            this.Load += new System.EventHandler(this.SiparisBilgileri_Load_1);
+            this.Load += new System.EventHandler(this.SiparisBilgileri_Load);
             this.Shown += new System.EventHandler(this.SiparisBilgileri_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

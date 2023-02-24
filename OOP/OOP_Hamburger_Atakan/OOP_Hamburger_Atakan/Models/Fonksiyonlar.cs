@@ -1,9 +1,11 @@
-﻿using System;
+﻿using OOP_Hamburger_Atakan.Properties;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -29,14 +31,39 @@ namespace OOP_Hamburger_Atakan
         {
             if (malzemeAdi == string.Empty || dic.Keys.Contains(malzemeAdi))
             {
+                YanlisSesiCal();
                 System.Windows.Forms.MessageBox.Show("Lütfen menüde olmayan bir ürün ekleyiniz. Ürün ismi boş olamaz.!");
             }
             else
             {
                 malzemeAdi = MenuAdiToTitleCase(malzemeAdi);
                 dic.Add(malzemeAdi, fiyat);
+                DogruSesiCal();                
                 System.Windows.Forms.MessageBox.Show("Ekleme Başarılı.!");
             }
+        }
+
+        /// <summary>
+        /// Doğru efekt sesini çalar.
+        /// </summary>
+        public static void DogruSesiCal()
+        {
+            SoundPlayer soundPlayer = new SoundPlayer();
+            System.IO.Stream str = Properties.Resources.collect_5930; 
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+            snd.Play();
+        }
+
+
+        /// <summary>
+        /// Yanlış efekt sesini çalar.
+        /// </summary>
+        public static void YanlisSesiCal()
+        {
+            SoundPlayer soundPlayer = new SoundPlayer();
+            System.IO.Stream str = Properties.Resources.wrong_answer_126515; 
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+            snd.Play();
         }
 
 
@@ -340,9 +367,5 @@ namespace OOP_Hamburger_Atakan
             }
         }
 
-        public static void ListBoxEkle(ListBox lst, Dictionary<string, decimal> dic)
-        {
-
-        }
     }
 }

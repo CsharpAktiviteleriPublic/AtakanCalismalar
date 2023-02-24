@@ -146,6 +146,11 @@
             // numAdet
             // 
             this.numAdet.Location = new System.Drawing.Point(82, 529);
+            this.numAdet.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numAdet.Name = "numAdet";
             this.numAdet.Size = new System.Drawing.Size(120, 26);
             this.numAdet.TabIndex = 8;
