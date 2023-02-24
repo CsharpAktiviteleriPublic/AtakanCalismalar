@@ -10,10 +10,9 @@ namespace OOP_Hamburger_Atakan
     {
         public enum Boyut
         {
-            kucuk = 1,
+            kucuk = 0,
             orta = 5,
-            buyuk = 10,
-
+            buyuk,
         }
     }
 }

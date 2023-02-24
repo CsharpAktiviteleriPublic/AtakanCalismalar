@@ -157,6 +157,7 @@
             // lstSiparisler
             // 
             this.lstSiparisler.FormattingEnabled = true;
+            this.lstSiparisler.HorizontalScrollbar = true;
             this.lstSiparisler.ItemHeight = 20;
             this.lstSiparisler.Location = new System.Drawing.Point(70, 98);
             this.lstSiparisler.Name = "lstSiparisler";
@@ -188,7 +189,9 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SiparisBilgileri";
             this.Text = "Siparis Bilgileri";
-            this.Load += new System.EventHandler(this.SiparisBilgileri_Load);
+            this.Activated += new System.EventHandler(this.SiparisBilgileri_Load);
+            this.Load += new System.EventHandler(this.SiparisBilgileri_Load_1);
+            this.Shown += new System.EventHandler(this.SiparisBilgileri_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -210,7 +213,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblCiro;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstSiparisler;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ListBox lstSiparisler;
     }
 }

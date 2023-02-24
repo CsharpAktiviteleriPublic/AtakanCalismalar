@@ -19,12 +19,14 @@ namespace OOP_Hamburger_Atakan
 
         private void SiparisBilgileri_Load(object sender, EventArgs e)
         {
-            FormBorderStyle = FormBorderStyle.None;
-            this.Dock = DockStyle.Fill;
-            lblCiro.Text = Siparis.Ciro.ToString();
-            lblSiparisSayisi.Text = Siparis.ToplamSiparisSayisi.ToString();
-            lblUrunAdedi.Text = Siparis.ToplamAdet.ToString();
-            lblEkstraMalGeliri.Text = Siparis.EkstraMalzemeGeliri.ToString();
+            Fonksiyonlar.FormDuzenle(this);
+            Fonksiyonlar.LabelFiyatYazdir(lblCiro, lblEkstraMalGeliri, lblSiparisSayisi,lblUrunAdedi); ;
+      
+        }
+
+        private void SiparisBilgileri_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

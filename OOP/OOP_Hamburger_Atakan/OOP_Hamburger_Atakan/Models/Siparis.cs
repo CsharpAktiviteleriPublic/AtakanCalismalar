@@ -20,6 +20,5 @@ namespace OOP_Hamburger_Atakan
         public static string listeMetinFormat = "";
         public static string boyutAdi = "";
 
-
     }
 }

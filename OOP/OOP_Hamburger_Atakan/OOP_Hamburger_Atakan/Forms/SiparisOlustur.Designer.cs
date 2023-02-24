@@ -67,6 +67,7 @@
             this.cbMenuler.Location = new System.Drawing.Point(12, 261);
             this.cbMenuler.Name = "cbMenuler";
             this.cbMenuler.Size = new System.Drawing.Size(342, 28);
+            this.cbMenuler.Sorted = true;
             this.cbMenuler.TabIndex = 2;
             this.cbMenuler.SelectedIndexChanged += new System.EventHandler(this.SiparisTutariAl);
             this.cbMenuler.Click += new System.EventHandler(this.cbMenuler_Click);
@@ -209,6 +210,7 @@
             // 
             // btnSiparisiTamamla
             // 
+            this.btnSiparisiTamamla.Enabled = false;
             this.btnSiparisiTamamla.Location = new System.Drawing.Point(628, 506);
             this.btnSiparisiTamamla.Name = "btnSiparisiTamamla";
             this.btnSiparisiTamamla.Size = new System.Drawing.Size(202, 38);

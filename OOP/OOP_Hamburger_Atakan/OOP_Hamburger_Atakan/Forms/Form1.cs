@@ -23,6 +23,7 @@ namespace OOP_Hamburger_Atakan
         internal static EkstraMalzemeEkle ekstraMalzemeEkle = new EkstraMalzemeEkle();
         private void MyMdiParent_Load(object sender, EventArgs e)
         {
+
             siparisOlustur.MdiParent = this;
             siparisBilgileri.MdiParent = this;
         }
