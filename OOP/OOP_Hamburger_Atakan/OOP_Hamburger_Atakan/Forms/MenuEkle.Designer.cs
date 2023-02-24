@@ -127,6 +127,7 @@
             this.Name = "MenuEkle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuEkle";
+            this.Load += new System.EventHandler(this.MenuEkle_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numMenuFiyat)).EndInit();

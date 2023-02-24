@@ -21,6 +21,10 @@ namespace OOP_Hamburger_Atakan
         {
             FormBorderStyle = FormBorderStyle.None;
             this.Dock = DockStyle.Fill;
+            lblCiro.Text = Siparis.Ciro.ToString();
+            lblSiparisSayisi.Text = Siparis.ToplamSiparisSayisi.ToString();
+            lblUrunAdedi.Text = Siparis.ToplamAdet.ToString();
+            lblEkstraMalGeliri.Text = Siparis.EkstraMalzemeGeliri.ToString();
         }
     }
 }

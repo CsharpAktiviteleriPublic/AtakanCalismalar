@@ -20,20 +20,32 @@ namespace OOP_Hamburger_Atakan
 
         private void SiparisOlustur_Load(object sender, EventArgs e)
         {
+            
+            FormDuzenle();
+            Fonksiyonlar.SoslariYukle(flpEkstraMalzemeler,Ekstra.malzemeler);
+            Fonksiyonlar.MenuleriYukle(cbMenuler,Menuler.menuler);
+        }
+
+        private void FormDuzenle()
+        {
             FormBorderStyle = FormBorderStyle.None;
-            this.Dock = DockStyle.Fill;
-            Fonksiyonlar.SoslariYukle(flpEkstraMalzemeler);
-            Fonksiyonlar.MenuleriYukle(cbMenuler);
-        }       
+            Dock = DockStyle.Fill;
+        }
 
         private void btnSiparisEkle_Click(object sender, EventArgs e)
         {
-
             DialogResult dr = MessageBox.Show($"Toplam Sipariş Tutarı : {lblToplamTutar.Text} ₺\nSatın almayı tamamlamak ister misiniz? ", "Sipariş Bilgisi", MessageBoxButtons.YesNo);
 
+
             if (dr == DialogResult.Yes)
-            {
-                MyMdiParent.siparisBilgileri.Show();
+            {              
+                Fonksiyonlar.SecilenBoyutAdi(grpHamburgerBoyut);
+                Fonksiyonlar.SecilenMalzemeAdlari(flpEkstraMalzemeler);
+                Fonksiyonlar.SiparisListeEkle(cbMenuler, lstSiparisler);
+                Siparis.ToplamSiparisSayisi++;
+                Siparis.ToplamAdet += (int)numAdet.Value;
+                Siparis.EkstraMalzemeGeliri += Fonksiyonlar.EkstraMalzemelerFiyatiAl(flpEkstraMalzemeler);
+                Siparis.Ciro += Fonksiyonlar.ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet);
             }
             else
             {
@@ -41,31 +53,23 @@ namespace OOP_Hamburger_Atakan
             }
 
         }
-
-
         private void cbMenuler_Click(object sender, EventArgs e)
-        {
-            cbMenuler.Items.Clear();
-            foreach (var menuAdi in Menuler.menuler)
-            {
-                cbMenuler.Items.Add(menuAdi.Key);
-            }
-        }
-  
-        private void SiparisTutariAl(object sender, EventArgs e)
-        {
+        {            
+            Fonksiyonlar.MenuleriYukle(cbMenuler, Menuler.menuler);
+        }  
+        public void SiparisTutariAl(object sender, EventArgs e)
+        {          
             Siparis.Adet = Fonksiyonlar.AdetFiyatAl(numAdet);
-
             Menuler.Ucret = Fonksiyonlar.MenuFiyatiAl(cbMenuler);
-
-            Siparis.BoyutUcreti = Fonksiyonlar.BoyutFiyatiAl(grpHamburgerBoyut);
-
-            Ekstra.MalzemeUcreti = Fonksiyonlar.EkstraMalzemelerFiyatiAl(flpEkstraMalzemeler);
-
+            Siparis.BoyutUcreti = Fonksiyonlar.BoyutFiyatiAl(grpHamburgerBoyut);   
             Siparis.ToplamTutar = Fonksiyonlar.ToplamSiparisTutariAl(Menuler.Ucret, Siparis.BoyutUcreti, Ekstra.MalzemeUcreti, Siparis.Adet);
+            Ekstra.MalzemeUcreti = Fonksiyonlar.EkstraMalzemelerFiyatiAl(flpEkstraMalzemeler);
+            Fonksiyonlar.LabelFiyatYazdir(lblToplamTutar);
+        }
 
-            lblToplamTutar.Text = Fonksiyonlar.LabelFiyatAl(lblToplamTutar);
-
+        private void btnSiparisiTamamla_Click(object sender, EventArgs e)
+        {
+            MyMdiParent.siparisBilgileri.Show();
         }
     }
 }

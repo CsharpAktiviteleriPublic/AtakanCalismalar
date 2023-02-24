@@ -19,7 +19,8 @@ namespace OOP_Hamburger_Atakan
 
         private void btnMalzemeEkle_Click(object sender, EventArgs e)
         {
-           
+            Fonksiyonlar.Ekle(Ekstra.malzemeler, txtEkstraMalzemeAdi.Text, numFiyat.Value);
+            Fonksiyonlar.SoslariYukle(MyMdiParent.siparisOlustur.flpEkstraMalzemeler, Ekstra.malzemeler);
         }
     }
 }

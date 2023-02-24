@@ -59,12 +59,12 @@
             // lblUrunAdedi
             // 
             this.lblUrunAdedi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblUrunAdedi.Location = new System.Drawing.Point(7, 22);
+            this.lblUrunAdedi.Location = new System.Drawing.Point(7, 36);
             this.lblUrunAdedi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUrunAdedi.Name = "lblUrunAdedi";
             this.lblUrunAdedi.Size = new System.Drawing.Size(78, 20);
             this.lblUrunAdedi.TabIndex = 0;
-            this.lblUrunAdedi.Text = "25";
+            this.lblUrunAdedi.Text = "0";
             this.lblUrunAdedi.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // groupBox3
@@ -81,18 +81,18 @@
             // lblEkstraMalGeliri
             // 
             this.lblEkstraMalGeliri.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblEkstraMalGeliri.Location = new System.Drawing.Point(7, 22);
+            this.lblEkstraMalGeliri.Location = new System.Drawing.Point(7, 36);
             this.lblEkstraMalGeliri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEkstraMalGeliri.Name = "lblEkstraMalGeliri";
             this.lblEkstraMalGeliri.Size = new System.Drawing.Size(78, 20);
             this.lblEkstraMalGeliri.TabIndex = 0;
-            this.lblEkstraMalGeliri.Text = "25";
+            this.lblEkstraMalGeliri.Text = "0";
             this.lblEkstraMalGeliri.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label7
             // 
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(82, 15);
+            this.label7.Location = new System.Drawing.Point(82, 29);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(28, 34);
@@ -113,12 +113,12 @@
             // lblSiparisSayisi
             // 
             this.lblSiparisSayisi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblSiparisSayisi.Location = new System.Drawing.Point(7, 22);
+            this.lblSiparisSayisi.Location = new System.Drawing.Point(7, 36);
             this.lblSiparisSayisi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSiparisSayisi.Name = "lblSiparisSayisi";
             this.lblSiparisSayisi.Size = new System.Drawing.Size(78, 20);
             this.lblSiparisSayisi.TabIndex = 0;
-            this.lblSiparisSayisi.Text = "25";
+            this.lblSiparisSayisi.Text = "0";
             this.lblSiparisSayisi.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // groupBox1
@@ -135,18 +135,18 @@
             // lblCiro
             // 
             this.lblCiro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCiro.Location = new System.Drawing.Point(7, 22);
+            this.lblCiro.Location = new System.Drawing.Point(7, 36);
             this.lblCiro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCiro.Name = "lblCiro";
             this.lblCiro.Size = new System.Drawing.Size(78, 20);
             this.lblCiro.TabIndex = 0;
-            this.lblCiro.Text = "25";
+            this.lblCiro.Text = "0";
             this.lblCiro.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label2
             // 
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(82, 15);
+            this.label2.Location = new System.Drawing.Point(82, 29);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 34);

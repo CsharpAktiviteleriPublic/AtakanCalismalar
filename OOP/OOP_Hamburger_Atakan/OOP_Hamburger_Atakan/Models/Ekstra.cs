@@ -9,7 +9,7 @@ namespace OOP_Hamburger_Atakan
     internal class Ekstra
     {
         public static Dictionary<string, decimal> malzemeler = new Dictionary<string, decimal>(); // ekstra malzemeler fiyat ve 
-
+        public static string SecilenMalzemeler = "";
         public static decimal MalzemeUcreti = 0;
         static Ekstra()
         {
