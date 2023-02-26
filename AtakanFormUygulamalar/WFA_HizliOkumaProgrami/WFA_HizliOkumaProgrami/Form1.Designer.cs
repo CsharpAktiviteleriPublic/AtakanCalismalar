@@ -46,10 +46,12 @@
             btnFastRead = new Button();
             pnlRight = new Panel();
             pnlAlan = new Panel();
+            ucAnasayfa1 = new ucAnasayfa();
             tmrDate = new System.Windows.Forms.Timer(components);
             pnlUp.SuspendLayout();
             pnlDown.SuspendLayout();
             pnlLeft.SuspendLayout();
+            pnlAlan.SuspendLayout();
             SuspendLayout();
             // 
             // pnlUp
@@ -293,12 +295,22 @@
             // pnlAlan
             // 
             pnlAlan.BackColor = SystemColors.AppWorkspace;
+            pnlAlan.Controls.Add(ucAnasayfa1);
             pnlAlan.Dock = DockStyle.Fill;
             pnlAlan.ImeMode = ImeMode.NoControl;
             pnlAlan.Location = new Point(194, 40);
             pnlAlan.Name = "pnlAlan";
             pnlAlan.Size = new Size(1000, 520);
             pnlAlan.TabIndex = 4;
+            // 
+            // ucAnasayfa1
+            // 
+            ucAnasayfa1.BackgroundImageLayout = ImageLayout.Stretch;
+            ucAnasayfa1.Location = new Point(0, 0);
+            ucAnasayfa1.Name = "ucAnasayfa1";
+            ucAnasayfa1.Size = new Size(1000, 520);
+            ucAnasayfa1.TabIndex = 0;
+            ucAnasayfa1.Visible = false;
             // 
             // tmrDate
             // 
@@ -323,6 +335,7 @@
             pnlUp.ResumeLayout(false);
             pnlDown.ResumeLayout(false);
             pnlLeft.ResumeLayout(false);
+            pnlAlan.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -350,5 +363,6 @@
         private Label lblDate;
         private Label lblTime;
         private Panel pnlActivePage;
+        private ucAnasayfa ucAnasayfa1;
     }
 }

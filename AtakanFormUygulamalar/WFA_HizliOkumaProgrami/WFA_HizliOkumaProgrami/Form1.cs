@@ -13,9 +13,6 @@ namespace WFA_HizliOkumaProgrami
             tmrDate.Start();
         }
 
-
-
-
         private void btnMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -45,6 +42,9 @@ namespace WFA_HizliOkumaProgrami
         private void btnFastRead_Click(object sender, EventArgs e)
         {
             pnlActivePage.Top = btnFastRead.Top;
+            ucAnasayfa1.Visible = true;
+            pnlAlan.Controls.Add(ucAnasayfa1);
+
         }
 
         private void btnTeachers_Click(object sender, EventArgs e)
