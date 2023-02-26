@@ -28,315 +28,303 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            pnlUp = new Panel();
-            btnClose = new Button();
-            btnMin = new Button();
-            btnHomePage = new Button();
-            pnlDown = new Panel();
-            lblDate = new Label();
-            lblTime = new Label();
-            pnlLeft = new Panel();
-            pnlActivePage = new Panel();
-            btnTest = new Button();
-            btnExercise3 = new Button();
-            btnExercise2 = new Button();
-            btnExercise1 = new Button();
-            btnTeachers = new Button();
-            btnFastRead = new Button();
-            pnlRight = new Panel();
-            pnlAlan = new Panel();
-            ucAnasayfa1 = new ucAnasayfa();
-            tmrDate = new System.Windows.Forms.Timer(components);
-            pnlUp.SuspendLayout();
-            pnlDown.SuspendLayout();
-            pnlLeft.SuspendLayout();
-            pnlAlan.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.pnlUp = new System.Windows.Forms.Panel();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnMin = new System.Windows.Forms.Button();
+            this.btnHomePage = new System.Windows.Forms.Button();
+            this.pnlDown = new System.Windows.Forms.Panel();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.pnlLeft = new System.Windows.Forms.Panel();
+            this.pnlActivePage = new System.Windows.Forms.Panel();
+            this.btnTest = new System.Windows.Forms.Button();
+            this.btnExercise3 = new System.Windows.Forms.Button();
+            this.btnExercise2 = new System.Windows.Forms.Button();
+            this.btnExercise1 = new System.Windows.Forms.Button();
+            this.btnTeachers = new System.Windows.Forms.Button();
+            this.btnFastRead = new System.Windows.Forms.Button();
+            this.pnlRight = new System.Windows.Forms.Panel();
+            this.pnlAlan = new System.Windows.Forms.Panel();
+            this.tmrDate = new System.Windows.Forms.Timer(this.components);
+            this.pnlUp.SuspendLayout();
+            this.pnlDown.SuspendLayout();
+            this.pnlLeft.SuspendLayout();
+            this.SuspendLayout();
             // 
             // pnlUp
             // 
-            pnlUp.BackColor = Color.Black;
-            pnlUp.Controls.Add(btnClose);
-            pnlUp.Controls.Add(btnMin);
-            pnlUp.Dock = DockStyle.Top;
-            pnlUp.Location = new Point(0, 0);
-            pnlUp.Name = "pnlUp";
-            pnlUp.Size = new Size(1250, 40);
-            pnlUp.TabIndex = 0;
+            this.pnlUp.BackColor = System.Drawing.Color.Black;
+            this.pnlUp.Controls.Add(this.btnClose);
+            this.pnlUp.Controls.Add(this.btnMin);
+            this.pnlUp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlUp.Location = new System.Drawing.Point(0, 0);
+            this.pnlUp.Name = "pnlUp";
+            this.pnlUp.Size = new System.Drawing.Size(1250, 40);
+            this.pnlUp.TabIndex = 0;
             // 
             // btnClose
             // 
-            btnClose.BackColor = Color.Transparent;
-            btnClose.FlatAppearance.BorderSize = 0;
-            btnClose.FlatAppearance.MouseDownBackColor = Color.Cyan;
-            btnClose.FlatAppearance.MouseOverBackColor = Color.Red;
-            btnClose.FlatStyle = FlatStyle.Flat;
-            btnClose.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnClose.ForeColor = Color.Cyan;
-            btnClose.Image = Properties.Resources.CloseButton2;
-            btnClose.Location = new Point(1212, 3);
-            btnClose.Name = "btnClose";
-            btnClose.RightToLeft = RightToLeft.No;
-            btnClose.Size = new Size(33, 33);
-            btnClose.TabIndex = 3;
-            btnClose.UseVisualStyleBackColor = false;
-            btnClose.Click += btnClose_Click;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnClose.ForeColor = System.Drawing.Color.Cyan;
+            this.btnClose.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.CloseButton2;
+            this.btnClose.Location = new System.Drawing.Point(1212, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnClose.Size = new System.Drawing.Size(33, 33);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnMin
             // 
-            btnMin.BackColor = Color.Transparent;
-            btnMin.FlatAppearance.BorderSize = 0;
-            btnMin.FlatAppearance.MouseDownBackColor = Color.Cyan;
-            btnMin.FlatAppearance.MouseOverBackColor = Color.Red;
-            btnMin.FlatStyle = FlatStyle.Flat;
-            btnMin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMin.ForeColor = Color.Cyan;
-            btnMin.Image = Properties.Resources.Minus;
-            btnMin.Location = new Point(1173, 3);
-            btnMin.Name = "btnMin";
-            btnMin.RightToLeft = RightToLeft.No;
-            btnMin.Size = new Size(33, 33);
-            btnMin.TabIndex = 3;
-            btnMin.UseVisualStyleBackColor = false;
-            btnMin.Click += btnMin_Click;
+            this.btnMin.BackColor = System.Drawing.Color.Transparent;
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Cyan;
+            this.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnMin.ForeColor = System.Drawing.Color.Cyan;
+            this.btnMin.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.Minus;
+            this.btnMin.Location = new System.Drawing.Point(1173, 3);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnMin.Size = new System.Drawing.Size(33, 33);
+            this.btnMin.TabIndex = 3;
+            this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnHomePage
             // 
-            btnHomePage.FlatAppearance.BorderSize = 0;
-            btnHomePage.FlatStyle = FlatStyle.Flat;
-            btnHomePage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnHomePage.ForeColor = Color.Cyan;
-            btnHomePage.Image = Properties.Resources.HomePageButton2;
-            btnHomePage.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHomePage.Location = new Point(26, 21);
-            btnHomePage.Name = "btnHomePage";
-            btnHomePage.RightToLeft = RightToLeft.No;
-            btnHomePage.Size = new Size(129, 33);
-            btnHomePage.TabIndex = 3;
-            btnHomePage.Text = "ANASAYFA";
-            btnHomePage.TextAlign = ContentAlignment.MiddleRight;
-            btnHomePage.UseVisualStyleBackColor = true;
-            btnHomePage.Click += btnHomePage_Click;
+            this.btnHomePage.FlatAppearance.BorderSize = 0;
+            this.btnHomePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHomePage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnHomePage.ForeColor = System.Drawing.Color.Cyan;
+            this.btnHomePage.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnHomePage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHomePage.Location = new System.Drawing.Point(26, 21);
+            this.btnHomePage.Name = "btnHomePage";
+            this.btnHomePage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnHomePage.Size = new System.Drawing.Size(129, 33);
+            this.btnHomePage.TabIndex = 3;
+            this.btnHomePage.Text = "ANASAYFA";
+            this.btnHomePage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHomePage.UseVisualStyleBackColor = true;
+            this.btnHomePage.Click += new System.EventHandler(this.btnHomePage_Click);
             // 
             // pnlDown
             // 
-            pnlDown.BackColor = Color.Black;
-            pnlDown.Controls.Add(lblDate);
-            pnlDown.Controls.Add(lblTime);
-            pnlDown.Dock = DockStyle.Bottom;
-            pnlDown.Location = new Point(0, 560);
-            pnlDown.Name = "pnlDown";
-            pnlDown.Size = new Size(1250, 90);
-            pnlDown.TabIndex = 1;
+            this.pnlDown.BackColor = System.Drawing.Color.Black;
+            this.pnlDown.Controls.Add(this.lblDate);
+            this.pnlDown.Controls.Add(this.lblTime);
+            this.pnlDown.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlDown.Location = new System.Drawing.Point(0, 560);
+            this.pnlDown.Name = "pnlDown";
+            this.pnlDown.Size = new System.Drawing.Size(1250, 90);
+            this.pnlDown.TabIndex = 1;
             // 
             // lblDate
             // 
-            lblDate.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDate.ForeColor = Color.FromArgb(192, 0, 0);
-            lblDate.Location = new Point(1077, 44);
-            lblDate.Name = "lblDate";
-            lblDate.Size = new Size(161, 37);
-            lblDate.TabIndex = 4;
-            lblDate.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblDate.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDate.Location = new System.Drawing.Point(1077, 44);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(161, 37);
+            this.lblDate.TabIndex = 4;
+            this.lblDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblTime
             // 
-            lblTime.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTime.ForeColor = Color.FromArgb(192, 0, 0);
-            lblTime.Location = new Point(1077, 3);
-            lblTime.Name = "lblTime";
-            lblTime.Size = new Size(161, 37);
-            lblTime.TabIndex = 4;
-            lblTime.TextAlign = ContentAlignment.MiddleCenter;
+            this.lblTime.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblTime.Location = new System.Drawing.Point(1077, 3);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(161, 37);
+            this.lblTime.TabIndex = 4;
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlLeft
             // 
-            pnlLeft.BackColor = Color.FromArgb(64, 0, 0);
-            pnlLeft.Controls.Add(pnlActivePage);
-            pnlLeft.Controls.Add(btnTest);
-            pnlLeft.Controls.Add(btnExercise3);
-            pnlLeft.Controls.Add(btnExercise2);
-            pnlLeft.Controls.Add(btnExercise1);
-            pnlLeft.Controls.Add(btnTeachers);
-            pnlLeft.Controls.Add(btnFastRead);
-            pnlLeft.Controls.Add(btnHomePage);
-            pnlLeft.Dock = DockStyle.Left;
-            pnlLeft.Location = new Point(0, 40);
-            pnlLeft.Name = "pnlLeft";
-            pnlLeft.Size = new Size(194, 520);
-            pnlLeft.TabIndex = 2;
+            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlLeft.Controls.Add(this.pnlActivePage);
+            this.pnlLeft.Controls.Add(this.btnTest);
+            this.pnlLeft.Controls.Add(this.btnExercise3);
+            this.pnlLeft.Controls.Add(this.btnExercise2);
+            this.pnlLeft.Controls.Add(this.btnExercise1);
+            this.pnlLeft.Controls.Add(this.btnTeachers);
+            this.pnlLeft.Controls.Add(this.btnFastRead);
+            this.pnlLeft.Controls.Add(this.btnHomePage);
+            this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlLeft.Location = new System.Drawing.Point(0, 40);
+            this.pnlLeft.Name = "pnlLeft";
+            this.pnlLeft.Size = new System.Drawing.Size(194, 520);
+            this.pnlLeft.TabIndex = 2;
             // 
             // pnlActivePage
             // 
-            pnlActivePage.BackColor = Color.LawnGreen;
-            pnlActivePage.Location = new Point(12, 21);
-            pnlActivePage.Name = "pnlActivePage";
-            pnlActivePage.Size = new Size(10, 33);
-            pnlActivePage.TabIndex = 4;
+            this.pnlActivePage.BackColor = System.Drawing.Color.LawnGreen;
+            this.pnlActivePage.Location = new System.Drawing.Point(12, 21);
+            this.pnlActivePage.Name = "pnlActivePage";
+            this.pnlActivePage.Size = new System.Drawing.Size(10, 33);
+            this.pnlActivePage.TabIndex = 4;
             // 
             // btnTest
             // 
-            btnTest.FlatAppearance.BorderSize = 0;
-            btnTest.FlatStyle = FlatStyle.Flat;
-            btnTest.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnTest.ForeColor = Color.Cyan;
-            btnTest.Image = Properties.Resources.HomePageButton2;
-            btnTest.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTest.Location = new Point(26, 441);
-            btnTest.Name = "btnTest";
-            btnTest.RightToLeft = RightToLeft.No;
-            btnTest.Size = new Size(87, 33);
-            btnTest.TabIndex = 3;
-            btnTest.Text = "TEST";
-            btnTest.TextAlign = ContentAlignment.MiddleRight;
-            btnTest.UseVisualStyleBackColor = true;
-            btnTest.Click += btnTest_Click;
+            this.btnTest.FlatAppearance.BorderSize = 0;
+            this.btnTest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTest.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTest.ForeColor = System.Drawing.Color.Cyan;
+            this.btnTest.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnTest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTest.Location = new System.Drawing.Point(26, 441);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTest.Size = new System.Drawing.Size(87, 33);
+            this.btnTest.TabIndex = 3;
+            this.btnTest.Text = "TEST";
+            this.btnTest.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // btnExercise3
             // 
-            btnExercise3.FlatAppearance.BorderSize = 0;
-            btnExercise3.FlatStyle = FlatStyle.Flat;
-            btnExercise3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExercise3.ForeColor = Color.Cyan;
-            btnExercise3.Image = Properties.Resources.HomePageButton2;
-            btnExercise3.ImageAlign = ContentAlignment.MiddleLeft;
-            btnExercise3.Location = new Point(26, 371);
-            btnExercise3.Name = "btnExercise3";
-            btnExercise3.RightToLeft = RightToLeft.No;
-            btnExercise3.Size = new Size(138, 33);
-            btnExercise3.TabIndex = 3;
-            btnExercise3.Text = "EGZERSİZ-3";
-            btnExercise3.TextAlign = ContentAlignment.MiddleRight;
-            btnExercise3.UseVisualStyleBackColor = true;
-            btnExercise3.Click += btnExercise3_Click;
+            this.btnExercise3.FlatAppearance.BorderSize = 0;
+            this.btnExercise3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExercise3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnExercise3.ForeColor = System.Drawing.Color.Cyan;
+            this.btnExercise3.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnExercise3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExercise3.Location = new System.Drawing.Point(26, 371);
+            this.btnExercise3.Name = "btnExercise3";
+            this.btnExercise3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnExercise3.Size = new System.Drawing.Size(138, 33);
+            this.btnExercise3.TabIndex = 3;
+            this.btnExercise3.Text = "EGZERSİZ-3";
+            this.btnExercise3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExercise3.UseVisualStyleBackColor = true;
+            this.btnExercise3.Click += new System.EventHandler(this.btnExercise3_Click);
             // 
             // btnExercise2
             // 
-            btnExercise2.FlatAppearance.BorderSize = 0;
-            btnExercise2.FlatStyle = FlatStyle.Flat;
-            btnExercise2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExercise2.ForeColor = Color.Cyan;
-            btnExercise2.Image = Properties.Resources.HomePageButton2;
-            btnExercise2.ImageAlign = ContentAlignment.MiddleLeft;
-            btnExercise2.Location = new Point(26, 301);
-            btnExercise2.Name = "btnExercise2";
-            btnExercise2.RightToLeft = RightToLeft.No;
-            btnExercise2.Size = new Size(138, 33);
-            btnExercise2.TabIndex = 3;
-            btnExercise2.Text = "EGZERSİZ-2";
-            btnExercise2.TextAlign = ContentAlignment.MiddleRight;
-            btnExercise2.UseVisualStyleBackColor = true;
-            btnExercise2.Click += btnExercise2_Click;
+            this.btnExercise2.FlatAppearance.BorderSize = 0;
+            this.btnExercise2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExercise2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnExercise2.ForeColor = System.Drawing.Color.Cyan;
+            this.btnExercise2.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnExercise2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExercise2.Location = new System.Drawing.Point(26, 301);
+            this.btnExercise2.Name = "btnExercise2";
+            this.btnExercise2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnExercise2.Size = new System.Drawing.Size(138, 33);
+            this.btnExercise2.TabIndex = 3;
+            this.btnExercise2.Text = "EGZERSİZ-2";
+            this.btnExercise2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExercise2.UseVisualStyleBackColor = true;
+            this.btnExercise2.Click += new System.EventHandler(this.btnExercise2_Click);
             // 
             // btnExercise1
             // 
-            btnExercise1.FlatAppearance.BorderSize = 0;
-            btnExercise1.FlatStyle = FlatStyle.Flat;
-            btnExercise1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnExercise1.ForeColor = Color.Cyan;
-            btnExercise1.Image = Properties.Resources.HomePageButton2;
-            btnExercise1.ImageAlign = ContentAlignment.MiddleLeft;
-            btnExercise1.Location = new Point(26, 231);
-            btnExercise1.Name = "btnExercise1";
-            btnExercise1.RightToLeft = RightToLeft.No;
-            btnExercise1.Size = new Size(138, 33);
-            btnExercise1.TabIndex = 3;
-            btnExercise1.Text = "EGZERSİZ-1";
-            btnExercise1.TextAlign = ContentAlignment.MiddleRight;
-            btnExercise1.UseVisualStyleBackColor = true;
-            btnExercise1.Click += btnExercise1_Click;
+            this.btnExercise1.FlatAppearance.BorderSize = 0;
+            this.btnExercise1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExercise1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnExercise1.ForeColor = System.Drawing.Color.Cyan;
+            this.btnExercise1.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnExercise1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExercise1.Location = new System.Drawing.Point(26, 231);
+            this.btnExercise1.Name = "btnExercise1";
+            this.btnExercise1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnExercise1.Size = new System.Drawing.Size(138, 33);
+            this.btnExercise1.TabIndex = 3;
+            this.btnExercise1.Text = "EGZERSİZ-1";
+            this.btnExercise1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnExercise1.UseVisualStyleBackColor = true;
+            this.btnExercise1.Click += new System.EventHandler(this.btnExercise1_Click);
             // 
             // btnTeachers
             // 
-            btnTeachers.FlatAppearance.BorderSize = 0;
-            btnTeachers.FlatStyle = FlatStyle.Flat;
-            btnTeachers.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnTeachers.ForeColor = Color.Cyan;
-            btnTeachers.Image = Properties.Resources.HomePageButton2;
-            btnTeachers.ImageAlign = ContentAlignment.MiddleLeft;
-            btnTeachers.Location = new Point(26, 161);
-            btnTeachers.Name = "btnTeachers";
-            btnTeachers.RightToLeft = RightToLeft.No;
-            btnTeachers.Size = new Size(165, 33);
-            btnTeachers.TabIndex = 3;
-            btnTeachers.Text = "OGRETMENLER";
-            btnTeachers.TextAlign = ContentAlignment.MiddleRight;
-            btnTeachers.UseVisualStyleBackColor = true;
-            btnTeachers.Click += btnTeachers_Click;
+            this.btnTeachers.FlatAppearance.BorderSize = 0;
+            this.btnTeachers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTeachers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnTeachers.ForeColor = System.Drawing.Color.Cyan;
+            this.btnTeachers.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnTeachers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTeachers.Location = new System.Drawing.Point(26, 161);
+            this.btnTeachers.Name = "btnTeachers";
+            this.btnTeachers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnTeachers.Size = new System.Drawing.Size(165, 33);
+            this.btnTeachers.TabIndex = 3;
+            this.btnTeachers.Text = "OGRETMENLER";
+            this.btnTeachers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTeachers.UseVisualStyleBackColor = true;
+            this.btnTeachers.Click += new System.EventHandler(this.btnTeachers_Click);
             // 
             // btnFastRead
             // 
-            btnFastRead.FlatAppearance.BorderSize = 0;
-            btnFastRead.FlatStyle = FlatStyle.Flat;
-            btnFastRead.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnFastRead.ForeColor = Color.Cyan;
-            btnFastRead.Image = Properties.Resources.HomePageButton2;
-            btnFastRead.ImageAlign = ContentAlignment.MiddleLeft;
-            btnFastRead.Location = new Point(26, 91);
-            btnFastRead.Name = "btnFastRead";
-            btnFastRead.RightToLeft = RightToLeft.No;
-            btnFastRead.Size = new Size(154, 33);
-            btnFastRead.TabIndex = 3;
-            btnFastRead.Text = "HIZLI OKUMA";
-            btnFastRead.TextAlign = ContentAlignment.MiddleRight;
-            btnFastRead.UseVisualStyleBackColor = true;
-            btnFastRead.Click += btnFastRead_Click;
+            this.btnFastRead.FlatAppearance.BorderSize = 0;
+            this.btnFastRead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFastRead.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnFastRead.ForeColor = System.Drawing.Color.Cyan;
+            this.btnFastRead.Image = global::WFA_HizliOkumaProgrami.Properties.Resources.HomePageButton2;
+            this.btnFastRead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFastRead.Location = new System.Drawing.Point(26, 91);
+            this.btnFastRead.Name = "btnFastRead";
+            this.btnFastRead.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnFastRead.Size = new System.Drawing.Size(154, 33);
+            this.btnFastRead.TabIndex = 3;
+            this.btnFastRead.Text = "HIZLI OKUMA";
+            this.btnFastRead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFastRead.UseVisualStyleBackColor = true;
+            this.btnFastRead.Click += new System.EventHandler(this.btnFastRead_Click);
             // 
             // pnlRight
             // 
-            pnlRight.BackColor = Color.FromArgb(64, 0, 0);
-            pnlRight.Dock = DockStyle.Right;
-            pnlRight.Location = new Point(1194, 40);
-            pnlRight.Name = "pnlRight";
-            pnlRight.Size = new Size(56, 520);
-            pnlRight.TabIndex = 3;
+            this.pnlRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRight.Location = new System.Drawing.Point(1194, 40);
+            this.pnlRight.Name = "pnlRight";
+            this.pnlRight.Size = new System.Drawing.Size(56, 520);
+            this.pnlRight.TabIndex = 3;
             // 
             // pnlAlan
             // 
-            pnlAlan.BackColor = SystemColors.AppWorkspace;
-            pnlAlan.Controls.Add(ucAnasayfa1);
-            pnlAlan.Dock = DockStyle.Fill;
-            pnlAlan.ImeMode = ImeMode.NoControl;
-            pnlAlan.Location = new Point(194, 40);
-            pnlAlan.Name = "pnlAlan";
-            pnlAlan.Size = new Size(1000, 520);
-            pnlAlan.TabIndex = 4;
-            // 
-            // ucAnasayfa1
-            // 
-            ucAnasayfa1.BackgroundImageLayout = ImageLayout.Stretch;
-            ucAnasayfa1.Location = new Point(0, 0);
-            ucAnasayfa1.Name = "ucAnasayfa1";
-            ucAnasayfa1.Size = new Size(1000, 520);
-            ucAnasayfa1.TabIndex = 0;
-            ucAnasayfa1.Visible = false;
+            this.pnlAlan.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.pnlAlan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAlan.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.pnlAlan.Location = new System.Drawing.Point(194, 40);
+            this.pnlAlan.Name = "pnlAlan";
+            this.pnlAlan.Size = new System.Drawing.Size(1000, 520);
+            this.pnlAlan.TabIndex = 4;
             // 
             // tmrDate
             // 
-            tmrDate.Interval = 1000;
-            tmrDate.Tick += tmrDate_Tick;
+            this.tmrDate.Interval = 1000;
+            this.tmrDate.Tick += new System.EventHandler(this.tmrDate_Tick);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1250, 650);
-            Controls.Add(pnlAlan);
-            Controls.Add(pnlRight);
-            Controls.Add(pnlLeft);
-            Controls.Add(pnlDown);
-            Controls.Add(pnlUp);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Hızlı Okuma Programı";
-            Load += Form1_Load;
-            pnlUp.ResumeLayout(false);
-            pnlDown.ResumeLayout(false);
-            pnlLeft.ResumeLayout(false);
-            pnlAlan.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1250, 650);
+            this.Controls.Add(this.pnlAlan);
+            this.Controls.Add(this.pnlRight);
+            this.Controls.Add(this.pnlLeft);
+            this.Controls.Add(this.pnlDown);
+            this.Controls.Add(this.pnlUp);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Hızlı Okuma Programı";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.pnlUp.ResumeLayout(false);
+            this.pnlDown.ResumeLayout(false);
+            this.pnlLeft.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -363,6 +351,5 @@
         private Label lblDate;
         private Label lblTime;
         private Panel pnlActivePage;
-        private ucAnasayfa ucAnasayfa1;
     }
 }

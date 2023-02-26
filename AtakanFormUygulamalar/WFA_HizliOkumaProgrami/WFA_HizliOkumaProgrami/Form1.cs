@@ -1,7 +1,16 @@
+using System;
+using System.Media;
+using WFA_HizliOkumaProgrami.Properties;
+using WFA_HizliOkumaProgrami.UserControls;
+
 namespace WFA_HizliOkumaProgrami
 {
     public partial class Form1 : Form
     {
+        public static Random rnd = new Random();
+        ucExercise1 _ucExercise1 = new ucExercise1();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -15,11 +24,13 @@ namespace WFA_HizliOkumaProgrami
 
         private void btnMin_Click(object sender, EventArgs e)
         {
+            TimerStop();
             this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
+            TimerStop();
             this.Close();
         }
 
@@ -34,42 +45,63 @@ namespace WFA_HizliOkumaProgrami
             lblDate.Text = DateTime.Now.ToString("dd.MMM.yyyy");
         }
 
+        public void TimerStop()
+        {
+            _ucExercise1.tmrMoveBall.Stop();
+            _ucExercise1.tmrStopWatch.Stop();
+        }
         private void btnHomePage_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnHomePage.Top;
-
+            pnlAlan.Controls.Clear();
+            pnlAlan.Controls.Add(new ucAnasayfa());
         }
         private void btnFastRead_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnFastRead.Top;
-            ucAnasayfa1.Visible = true;
-            pnlAlan.Controls.Add(ucAnasayfa1);
-
+            pnlAlan.Controls.Clear();
+            pnlAlan.Controls.Add(new ucFastRead());
         }
 
         private void btnTeachers_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnTeachers.Top;
+            pnlAlan.Controls.Clear();
+
         }
 
         private void btnExercise1_Click(object sender, EventArgs e)
         {
+          
+            TimerStop();
+            _ucExercise1.CreateTimers();
             pnlActivePage.Top = btnExercise1.Top;
+            pnlAlan.Controls.Clear();
+            pnlAlan.Controls.Add(_ucExercise1);
         }
 
         private void btnExercise2_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnExercise2.Top;
+            pnlAlan.Controls.Clear();
         }
 
         private void btnExercise3_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnExercise3.Top;
+            pnlAlan.Controls.Clear();
         }
 
         private void btnTest_Click(object sender, EventArgs e)
         {
+            TimerStop();
             pnlActivePage.Top = btnTest.Top;
+            pnlAlan.Controls.Clear();
         }
     }
 }

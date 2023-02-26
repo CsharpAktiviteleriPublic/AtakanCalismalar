@@ -63,6 +63,16 @@ namespace WFA_HizliOkumaProgrami.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _30003 {
+            get {
+                object obj = ResourceManager.GetObject("30003", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AdobeStock_15119531 {
             get {
                 object obj = ResourceManager.GetObject("AdobeStock_15119531", resourceCulture);
@@ -77,6 +87,35 @@ namespace WFA_HizliOkumaProgrami.Properties {
             get {
                 object obj = ResourceManager.GetObject("AdobeStock_82567562", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ANLAYARAK_HIZLI_OKUMA_TEKNİKLERİ_e1305468534731 {
+            get {
+                object obj = ResourceManager.GetObject("ANLAYARAK-HIZLI-OKUMA-TEKNİKLERİ-e1305468534731", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ball {
+            get {
+                object obj = ResourceManager.GetObject("Ball", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Clap_03 {
+            get {
+                return ResourceManager.GetStream("Clap_03", resourceCulture);
             }
         }
         
