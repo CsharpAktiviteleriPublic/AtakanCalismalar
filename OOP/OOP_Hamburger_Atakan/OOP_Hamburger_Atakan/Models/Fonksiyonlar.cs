@@ -148,6 +148,7 @@ namespace OOP_Hamburger_Atakan
         /// <returns>Seçili checkbox'ların text'ini dictionary göndererek value'sunu Malzeme Ücretine ekler ve döndürür.</returns>
         public static decimal EkstraMalzemelerFiyatiAl(FlowLayoutPanel flp)
         {
+            
             Ekstra.MalzemeUcreti = 0;
             foreach (CheckBox item in flp.Controls)
             {
