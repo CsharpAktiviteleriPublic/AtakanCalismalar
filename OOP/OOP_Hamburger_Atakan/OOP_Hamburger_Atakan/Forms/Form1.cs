@@ -26,6 +26,7 @@ namespace OOP_Hamburger_Atakan
         {    
             siparisOlustur.MdiParent = this;
             siparisBilgileri.MdiParent = this;
+            Fonksiyonlar.Ekle()
         }
         private void siparisOlusturToolStripMenuItem_Click(object sender, EventArgs e)
         {
