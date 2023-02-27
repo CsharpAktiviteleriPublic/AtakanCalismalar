@@ -9,7 +9,7 @@ namespace WFA_HizliOkumaProgrami
     {
         public static Random rnd = new Random();
         ucExercise1 _ucExercise1 = new ucExercise1();
-
+        ucAnasayfa _ucAnasayfa = new ucAnasayfa();
 
         public Form1()
         {
@@ -19,7 +19,7 @@ namespace WFA_HizliOkumaProgrami
         private void Form1_Load(object sender, EventArgs e)
         {
             GetNowDateTime();
-            tmrDate.Start();
+            tmrDate.Start();    
         }
 
         private void btnMin_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace WFA_HizliOkumaProgrami
             TimerStop();
             pnlActivePage.Top = btnHomePage.Top;
             pnlAlan.Controls.Clear();
-            pnlAlan.Controls.Add(new ucAnasayfa());
+            pnlAlan.Controls.Add(_ucAnasayfa);
         }
         private void btnFastRead_Click(object sender, EventArgs e)
         {
@@ -75,7 +75,7 @@ namespace WFA_HizliOkumaProgrami
 
         private void btnExercise1_Click(object sender, EventArgs e)
         {
-          
+
             TimerStop();
             _ucExercise1.CreateTimers();
             pnlActivePage.Top = btnExercise1.Top;
