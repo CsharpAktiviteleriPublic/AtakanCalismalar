@@ -9,7 +9,12 @@ namespace WFA_HizliOkumaProgrami
     {
         public static Random rnd = new Random();
         ucExercise1 _ucExercise1 = new ucExercise1();
+<<<<<<< HEAD
         ucAnasayfa _ucAnasayfa = new ucAnasayfa();
+=======
+        ucExercise2 _ucExercise2 = new ucExercise2();
+
+>>>>>>> 9bd3600a4c0a31942b5f5e9b401ee5a468781130
 
         public Form1()
         {
