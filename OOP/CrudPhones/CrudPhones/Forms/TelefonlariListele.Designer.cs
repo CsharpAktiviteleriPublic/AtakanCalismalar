@@ -42,6 +42,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.pbPhones = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhones)).BeginInit();
             this.SuspendLayout();
             // 
             // cbTelefonlar
@@ -65,7 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(329, 114);
+            this.label2.Location = new System.Drawing.Point(297, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 20);
             this.label2.TabIndex = 2;
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(330, 153);
+            this.label3.Location = new System.Drawing.Point(298, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 2;
@@ -83,7 +85,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(358, 193);
+            this.label4.Location = new System.Drawing.Point(326, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 20);
             this.label4.TabIndex = 2;
@@ -92,7 +94,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(247, 233);
+            this.label5.Location = new System.Drawing.Point(215, 233);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(140, 20);
             this.label5.TabIndex = 2;
@@ -101,43 +103,39 @@
             // lblMarka
             // 
             this.lblMarka.AutoSize = true;
-            this.lblMarka.Location = new System.Drawing.Point(436, 114);
+            this.lblMarka.Location = new System.Drawing.Point(404, 114);
             this.lblMarka.Name = "lblMarka";
-            this.lblMarka.Size = new System.Drawing.Size(54, 20);
+            this.lblMarka.Size = new System.Drawing.Size(0, 20);
             this.lblMarka.TabIndex = 2;
-            this.lblMarka.Text = "Nokia";
             // 
             // lblModel
             // 
             this.lblModel.AutoSize = true;
-            this.lblModel.Location = new System.Drawing.Point(436, 153);
+            this.lblModel.Location = new System.Drawing.Point(404, 153);
             this.lblModel.Name = "lblModel";
-            this.lblModel.Size = new System.Drawing.Size(49, 20);
+            this.lblModel.Size = new System.Drawing.Size(0, 20);
             this.lblModel.TabIndex = 2;
-            this.lblModel.Text = "3310";
             // 
             // lblYil
             // 
             this.lblYil.AutoSize = true;
-            this.lblYil.Location = new System.Drawing.Point(436, 193);
+            this.lblYil.Location = new System.Drawing.Point(404, 193);
             this.lblYil.Name = "lblYil";
-            this.lblYil.Size = new System.Drawing.Size(49, 20);
+            this.lblYil.Size = new System.Drawing.Size(0, 20);
             this.lblYil.TabIndex = 2;
-            this.lblYil.Text = "3310";
             // 
             // lblDurum
             // 
             this.lblDurum.AutoSize = true;
-            this.lblDurum.Location = new System.Drawing.Point(436, 233);
+            this.lblDurum.Location = new System.Drawing.Point(404, 233);
             this.lblDurum.Name = "lblDurum";
-            this.lblDurum.Size = new System.Drawing.Size(49, 20);
+            this.lblDurum.Size = new System.Drawing.Size(0, 20);
             this.lblDurum.TabIndex = 2;
-            this.lblDurum.Text = "3310";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(393, 114);
+            this.label10.Location = new System.Drawing.Point(361, 114);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(14, 20);
             this.label10.TabIndex = 3;
@@ -146,7 +144,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(393, 153);
+            this.label11.Location = new System.Drawing.Point(361, 153);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 20);
             this.label11.TabIndex = 3;
@@ -155,7 +153,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(393, 193);
+            this.label12.Location = new System.Drawing.Point(361, 193);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(14, 20);
             this.label12.TabIndex = 3;
@@ -164,17 +162,29 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(393, 233);
+            this.label13.Location = new System.Drawing.Point(361, 233);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(14, 20);
             this.label13.TabIndex = 3;
             this.label13.Text = ":";
             // 
+            // pbPhones
+            // 
+            this.pbPhones.Image = global::CrudPhones.Properties.Resources.Nokia_3310;
+            this.pbPhones.Location = new System.Drawing.Point(538, 89);
+            this.pbPhones.Name = "pbPhones";
+            this.pbPhones.Size = new System.Drawing.Size(226, 200);
+            this.pbPhones.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPhones.TabIndex = 4;
+            this.pbPhones.TabStop = false;
+            // 
             // TelefonlariListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(844, 301);
+            this.Controls.Add(this.pbPhones);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -194,6 +204,7 @@
             this.Name = "TelefonlariListele";
             this.Text = "TelefonlariListele";
             this.Activated += new System.EventHandler(this.TelefonlariListele_Activated);
+            ((System.ComponentModel.ISupportInitialize)(this.pbPhones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,5 +226,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pbPhones;
     }
 }

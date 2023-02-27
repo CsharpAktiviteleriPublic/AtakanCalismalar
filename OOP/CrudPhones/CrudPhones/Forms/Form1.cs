@@ -44,36 +44,23 @@ namespace CrudPhones
 
         }
         private void telefonlarıDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
+        {            
             TelefonlariDuzenle duzenle = new TelefonlariDuzenle();
             FormuDuzenle(duzenle);
-            ChildForm(duzenle);
-            //TelefonlariDuzenle duzenle = new TelefonlariDuzenle();
-            //FormuDuzenle(duzenle);
-            //duzenle.MdiParent = this;
-            //this.Refresh();
-            //duzenle.Show();
+            ChildForm(duzenle);       
         }
 
         private void FormuDuzenle(Form frm)
         {
             frm.FormBorderStyle = FormBorderStyle.None;
-            frm.Dock = DockStyle.Fill;
-            
+            frm.Dock = DockStyle.Fill;            
         }
         private void telefonlarıListeleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelefonlariListele listele = new TelefonlariListele();
             FormuDuzenle(listele);
             ChildForm(listele);
-            ChildForm(new TelefonlariListele());
-
-            //TelefonlariListele telefonlariListele = new TelefonlariListele();
-            //telefonlariListele.MdiParent = this;
-            //FormuDuzenle(telefonlariListele);
-            //this.Refresh();
-            //telefonlariListele.Show();
+            ChildForm(new TelefonlariListele());       
         }
 
 

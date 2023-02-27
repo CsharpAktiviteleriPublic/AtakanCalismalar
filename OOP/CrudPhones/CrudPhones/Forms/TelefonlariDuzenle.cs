@@ -29,11 +29,17 @@ namespace CrudPhones
         {
             Telefon telefon = new Telefon();
             ArabaOzellikleriVer(telefon);
-            int selectedIndex = lstTelefonlar.SelectedIndex;
-            Telefon.telefonlarList.RemoveAt(selectedIndex);
-            Telefon.telefonlarList.Insert(selectedIndex, telefon);
-            lstTelefonlar.Items.RemoveAt(selectedIndex);
-            lstTelefonlar.Items.Insert(selectedIndex, telefon);
+            try
+            {
+                int selectedIndex = lstTelefonlar.SelectedIndex;
+                Telefon.telefonlarList.RemoveAt(selectedIndex);
+                Telefon.telefonlarList.Insert(selectedIndex, telefon);
+                lstTelefonlar.Items.RemoveAt(selectedIndex);
+                lstTelefonlar.Items.Insert(selectedIndex, telefon);
+            }
+            catch
+            {
+            }
         }
         private void btnSil_Click(object sender, EventArgs e)
         {
