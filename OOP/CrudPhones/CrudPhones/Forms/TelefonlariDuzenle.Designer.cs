@@ -35,9 +35,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtYil = new System.Windows.Forms.TextBox();
             this.grpTelefonDurum = new System.Windows.Forms.GroupBox();
-            this.rbtnSatista = new System.Windows.Forms.RadioButton();
-            this.rbtnKullanimda = new System.Windows.Forms.RadioButton();
             this.rbtnHurda = new System.Windows.Forms.RadioButton();
+            this.rbtnKullanimda = new System.Windows.Forms.RadioButton();
+            this.rbtnSatista = new System.Windows.Forms.RadioButton();
             this.lstTelefonlar = new System.Windows.Forms.ListBox();
             this.btnEkle = new System.Windows.Forms.Button();
             this.btnGüncelle = new System.Windows.Forms.Button();
@@ -105,16 +105,16 @@
             this.grpTelefonDurum.TabStop = false;
             this.grpTelefonDurum.Text = "Durumu";
             // 
-            // rbtnSatista
+            // rbtnHurda
             // 
-            this.rbtnSatista.AutoSize = true;
-            this.rbtnSatista.Location = new System.Drawing.Point(6, 49);
-            this.rbtnSatista.Name = "rbtnSatista";
-            this.rbtnSatista.Size = new System.Drawing.Size(84, 24);
-            this.rbtnSatista.TabIndex = 0;
-            this.rbtnSatista.TabStop = true;
-            this.rbtnSatista.Text = "Satista";
-            this.rbtnSatista.UseVisualStyleBackColor = true;
+            this.rbtnHurda.AutoSize = true;
+            this.rbtnHurda.Location = new System.Drawing.Point(329, 49);
+            this.rbtnHurda.Name = "rbtnHurda";
+            this.rbtnHurda.Size = new System.Drawing.Size(76, 24);
+            this.rbtnHurda.TabIndex = 0;
+            this.rbtnHurda.TabStop = true;
+            this.rbtnHurda.Text = "Hurda";
+            this.rbtnHurda.UseVisualStyleBackColor = true;
             // 
             // rbtnKullanimda
             // 
@@ -127,16 +127,16 @@
             this.rbtnKullanimda.Text = "Kullanimda";
             this.rbtnKullanimda.UseVisualStyleBackColor = true;
             // 
-            // rbtnHurda
+            // rbtnSatista
             // 
-            this.rbtnHurda.AutoSize = true;
-            this.rbtnHurda.Location = new System.Drawing.Point(329, 49);
-            this.rbtnHurda.Name = "rbtnHurda";
-            this.rbtnHurda.Size = new System.Drawing.Size(76, 24);
-            this.rbtnHurda.TabIndex = 0;
-            this.rbtnHurda.TabStop = true;
-            this.rbtnHurda.Text = "Hurda";
-            this.rbtnHurda.UseVisualStyleBackColor = true;
+            this.rbtnSatista.AutoSize = true;
+            this.rbtnSatista.Location = new System.Drawing.Point(6, 49);
+            this.rbtnSatista.Name = "rbtnSatista";
+            this.rbtnSatista.Size = new System.Drawing.Size(84, 24);
+            this.rbtnSatista.TabIndex = 0;
+            this.rbtnSatista.TabStop = true;
+            this.rbtnSatista.Text = "Satista";
+            this.rbtnSatista.UseVisualStyleBackColor = true;
             // 
             // lstTelefonlar
             // 
@@ -150,7 +150,7 @@
             // btnEkle
             // 
             this.btnEkle.BackColor = System.Drawing.Color.Lime;
-            this.btnEkle.Location = new System.Drawing.Point(441, 249);
+            this.btnEkle.Location = new System.Drawing.Point(441, 234);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(113, 39);
             this.btnEkle.TabIndex = 4;
@@ -161,7 +161,7 @@
             // btnGüncelle
             // 
             this.btnGüncelle.BackColor = System.Drawing.Color.Yellow;
-            this.btnGüncelle.Location = new System.Drawing.Point(574, 249);
+            this.btnGüncelle.Location = new System.Drawing.Point(574, 234);
             this.btnGüncelle.Name = "btnGüncelle";
             this.btnGüncelle.Size = new System.Drawing.Size(113, 39);
             this.btnGüncelle.TabIndex = 4;
@@ -172,7 +172,7 @@
             // btnSil
             // 
             this.btnSil.BackColor = System.Drawing.Color.Red;
-            this.btnSil.Location = new System.Drawing.Point(714, 249);
+            this.btnSil.Location = new System.Drawing.Point(714, 234);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(113, 39);
             this.btnSil.TabIndex = 4;
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 301);
+            this.ClientSize = new System.Drawing.Size(867, 303);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGüncelle);
             this.Controls.Add(this.btnEkle);
@@ -199,6 +199,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TelefonlariDuzenle";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelefonlariDuzenle";
             this.grpTelefonDurum.ResumeLayout(false);
             this.grpTelefonDurum.PerformLayout();

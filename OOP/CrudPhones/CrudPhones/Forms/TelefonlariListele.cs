@@ -49,5 +49,10 @@ namespace CrudPhones
             }
 
         }
+
+        private void TelefonlariListele_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

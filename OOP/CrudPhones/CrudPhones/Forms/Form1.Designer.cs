@@ -57,14 +57,14 @@
             // telefonlarıDüzenleToolStripMenuItem
             // 
             this.telefonlarıDüzenleToolStripMenuItem.Name = "telefonlarıDüzenleToolStripMenuItem";
-            this.telefonlarıDüzenleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telefonlarıDüzenleToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.telefonlarıDüzenleToolStripMenuItem.Text = "Telefon Düzenle";
             this.telefonlarıDüzenleToolStripMenuItem.Click += new System.EventHandler(this.telefonlarıDüzenleToolStripMenuItem_Click);
             // 
             // telefonlarıListeleToolStripMenuItem
             // 
             this.telefonlarıListeleToolStripMenuItem.Name = "telefonlarıListeleToolStripMenuItem";
-            this.telefonlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.telefonlarıListeleToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.telefonlarıListeleToolStripMenuItem.Text = "Telefonları Listele";
             this.telefonlarıListeleToolStripMenuItem.Click += new System.EventHandler(this.telefonlarıListeleToolStripMenuItem_Click);
             // 
@@ -77,6 +77,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);

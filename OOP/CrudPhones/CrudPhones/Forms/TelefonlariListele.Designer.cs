@@ -170,7 +170,6 @@
             // 
             // pbPhones
             // 
-            this.pbPhones.Image = global::CrudPhones.Properties.Resources.Nokia_3310;
             this.pbPhones.Location = new System.Drawing.Point(538, 89);
             this.pbPhones.Name = "pbPhones";
             this.pbPhones.Size = new System.Drawing.Size(226, 200);
@@ -183,7 +182,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(844, 301);
+            this.ClientSize = new System.Drawing.Size(867, 303);
             this.Controls.Add(this.pbPhones);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -202,8 +201,10 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "TelefonlariListele";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelefonlariListele";
             this.Activated += new System.EventHandler(this.TelefonlariListele_Activated);
+            this.Load += new System.EventHandler(this.TelefonlariListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPhones)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
