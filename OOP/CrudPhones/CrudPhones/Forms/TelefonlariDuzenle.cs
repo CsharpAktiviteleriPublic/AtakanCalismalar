@@ -21,21 +21,21 @@ namespace CrudPhones
         private void btnEkle_Click(object sender, EventArgs e)
         {
             Telefon telefon = new Telefon();
-            ArabaOzellikleriVer(telefon);
+            TelefonOzellikleriVer(telefon);
             Telefon.telefonlarList.Add(telefon);
             lstTelefonlar.Items.Add(telefon);
         }
         private void btnGüncelle_Click(object sender, EventArgs e)
         {
             Telefon telefon = new Telefon();
-            ArabaOzellikleriVer(telefon);
+            TelefonOzellikleriVer(telefon);
             try
             {
                 int selectedIndex = lstTelefonlar.SelectedIndex;
                 Telefon.telefonlarList.RemoveAt(selectedIndex);
                 Telefon.telefonlarList.Insert(selectedIndex, telefon);
                 lstTelefonlar.Items.RemoveAt(selectedIndex);
-                lstTelefonlar.Items.Insert(selectedIndex, telefon);
+                lstTelefonlar.Items.Insert(selectedIndex,telefon);
             }
             catch
             {
@@ -46,7 +46,7 @@ namespace CrudPhones
             Telefon.telefonlarList.Remove((Telefon)lstTelefonlar.SelectedItem);
             lstTelefonlar.Items.Remove(lstTelefonlar.SelectedItem);
         }
-        private void ArabaOzellikleriVer(Telefon telefon)
+        private void TelefonOzellikleriVer(Telefon telefon)
         {
             telefon.Marka = txtMarka.Text;
             telefon.Model = txtModel.Text;

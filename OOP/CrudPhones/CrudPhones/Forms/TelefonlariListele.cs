@@ -36,13 +36,14 @@ namespace CrudPhones
             Stream iphone = Properties.Resources.Iphone_2013_telefonzilsesleri_mobi;
             SoundPlayer soundNokia = new SoundPlayer(nokia);
             SoundPlayer soundIphone = new SoundPlayer(iphone);
+            
 
             if (lblMarka.Text == "Nokia")
             {
                 pbPhones.Image = Properties.Resources.Nokia_3310;
-                soundNokia.Play();               
+                soundNokia.Play();
             }
-            else if (lblMarka.Text == "Iphone")
+            else
             {
                 pbPhones.Image = Properties.Resources.iphone_13;
                 soundIphone.Play();
