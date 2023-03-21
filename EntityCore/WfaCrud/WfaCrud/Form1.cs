@@ -13,72 +13,53 @@ namespace WfaCrud
             InitializeComponent();
         }
         NorthwindContext _db = new NorthwindContext();
-        Customer customer;
+        Customer customer = new Customer();
         DialogResult dr;
-        Random rnd;
         string id, sirketAdi;
         int index;
-        bool varMi = false;
         private void Form1_Load(object sender, EventArgs e)
         {
             dgvTable.DataSource = _db.Customers.ToList();
         }
         private void btnEkle_Click(object sender, EventArgs e)
         {
-
-            OzellikleriBelirle();
-            customer = new Customer();
-            CustomerDuzenle(customer);
-            foreach (Customer cst in _db.Customers.ToList())
+            try
             {
-                if (cst.CustomerId == customer.CustomerId)
-                {
-                    varMi = true;
-                }
-            }
-            if (varMi)
-            {
-                MessageBox.Show("Ayný Id'ye sahip müþteri eklenemez..!");
-            }
-            else
-            {
+                OzellikleriBelirle();
+                CustomerDuzenle(customer);    
                 _db.Customers.Add(customer);
                 dbKaydet();
                 dgvGoster();
-                MessageBox.Show("Müþteri Eklendi");
-                varMi = false;
             }
-
+            catch
+            {
+                dgvGoster();
+                _db.Customers.Remove(customer);
+                dbKaydet();
+                MessageBox.Show("Ayný Id'ye sahip müþteri eklenemez..!");
+            }
 
         }
         private void btnGuncelle_Click(object sender, EventArgs e)
-        {
-            varMi = false;
+        {            
             dr = MessageBox.Show($"{txtID.Text} ID sine sahip müþteri güncellenecek.\n\n Emin misiniz?", "Bilgilendirme Mesaji", MessageBoxButtons.YesNo);
-
             if (dr == DialogResult.Yes)
             {
                 foreach (Customer cst in _db.Customers.ToList())
                 {
-                    if (/*cst.CustomerId == id*/cst.CustomerId == txtID.Text)
+                    if (cst.CustomerId == txtID.Text)
                     {
                         cst.CompanyName = txtSirketAdi.Text;
                         dbKaydet();
                         MessageBox.Show("Güncelleme baþarýlý");
-                        dgvGoster();
-                        varMi = true;
+                        dgvGoster();                       
                     }
-                }
-                if (!varMi)
-                {
-                    MessageBox.Show("Güncelleme Yapýlamadý. Lütfen 5 haneli bir id girdiðinize emin olun.");
-                }
+                }    
             }
             else
             {
                 MessageBox.Show("Güncelleme iptal edildi.");
             }
-
         }
         private void btnSil_Click(object sender, EventArgs e)
         {
@@ -97,8 +78,7 @@ namespace WfaCrud
                 catch 
                 {
                     MessageBox.Show("Silme esnasýnda bir hata oluþtu.");
-                }
-                
+                }                
             }
         }
         private void dbKaydet()
