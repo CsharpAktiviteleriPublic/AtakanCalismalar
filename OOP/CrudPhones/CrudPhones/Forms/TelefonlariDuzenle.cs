@@ -1,12 +1,5 @@
 ﻿using CrudPhones.Models;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CrudPhones
@@ -17,6 +10,8 @@ namespace CrudPhones
         {
             InitializeComponent();
         }
+
+
 
         private void btnEkle_Click(object sender, EventArgs e)
         {
@@ -35,7 +30,7 @@ namespace CrudPhones
                 Telefon.telefonlarList.RemoveAt(selectedIndex);
                 Telefon.telefonlarList.Insert(selectedIndex, telefon);
                 lstTelefonlar.Items.RemoveAt(selectedIndex);
-                lstTelefonlar.Items.Insert(selectedIndex,telefon);
+                lstTelefonlar.Items.Insert(selectedIndex, telefon);
             }
             catch
             {
