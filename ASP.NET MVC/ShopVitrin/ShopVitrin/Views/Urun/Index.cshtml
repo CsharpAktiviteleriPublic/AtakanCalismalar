@@ -1,0 +1,35 @@
+﻿@model List<Urun>
+@{
+    ViewBag.Title = "Urunler";
+}
+
+
+
+<div class="pb-2 container-fluid bg-warning bg-gradient text-secondary">
+    <h1 class="text-center">@ViewBag.Title</h1>
+
+</div>
+
+<div class="row ps-5 mt-3">
+    @foreach (var item in Model)
+    {
+        <div class="card col-6" style="width: 18rem;">
+            <img class="card-img-top" src="@item.Resim" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">@item.Isim</h5>
+                <p class="card-text">@item.Aciklama</p>
+            </div>
+            <div class="card-body">
+
+                <form class="shadow-lg row" action="Urun" method="post">
+                    <input type="hidden" name="id" value="@item.UrunId" />
+                    <button id="@item.UrunId" type="submit" asp-action="UrunEkle" asp-controller="Urun" class="btn-success col-12">Ekle</button>
+                    <input type="hidden" name="id" value="@item.UrunId" />
+                    <button id="@item.UrunId" type="submit" asp-action="UrunGuncelle" asp-controller="Urun" formmethod="get" class="btn-warning col-6">Güncelle</button>
+                    <input type="hidden" name="id" value="@item.UrunId" />
+                    <button id="@item.UrunId" type="submit" asp-action="UrunSil" asp-controller="Urun" class="btn-danger col-6">Sil</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>

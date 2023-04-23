@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Picture\erkek_beyaz_pantolon.png" />
+    <None Include="wwwroot\Picture\erkek_gri_ayakkabı.png" />
+    <None Include="wwwroot\Picture\erkek_gri_pantolon.png" />
+    <None Include="wwwroot\Picture\erkek_kareli_pantolon.png" />
+    <None Include="wwwroot\Picture\erkek_mavi_hırka.png" />
+    <None Include="wwwroot\Picture\erkek_tsirt.png" />
+    <None Include="wwwroot\Picture\erkek_tsirt_kırmızı.png" />
+    <None Include="wwwroot\Picture\kadın_kot_pantolon.png" />
+    <None Include="wwwroot\Picture\kadın_kot_siyah.png" />
+    <None Include="wwwroot\Picture\kadın_turuncu_hırka.png" />
+    <None Include="wwwroot\Picture\kadın_çanta_takım.png" />
+    <None Include="wwwroot\Picture\kulaklık.png" />
+    <None Include="wwwroot\Picture\ozan.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

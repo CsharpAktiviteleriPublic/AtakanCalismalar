@@ -1,0 +1,9 @@
+﻿@model Urun
+<h1>Burası güncelleme sayfası</h1>
+<form method="post" enctype="multipart/form-data">
+    <input class="form-control" type="hidden" name="id" value="@Model.UrunId" />
+    <input class="form-control" type="text" name="isim" value="@Model.Isim" />
+    <input class="form-control" type="text" name="aciklama" value="@Model.Aciklama" />
+    <input class="form-control-file" type="file" name="resim" value="@Model.Resim" />
+    <button class="btn-warning" type="submit" asp-controller="Urun" asp-action="UrunGuncelle">Güncellemeyi Tamamla</button>
+</form>
