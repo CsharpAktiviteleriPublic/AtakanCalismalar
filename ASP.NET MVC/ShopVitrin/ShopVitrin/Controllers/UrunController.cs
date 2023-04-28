@@ -9,7 +9,6 @@ namespace ShopVitrin.Controllers
 
         public IActionResult Index()
         {
-
             List<Urun> urunler = _db.Urunler.ToList();
             return View(urunler);
         }
@@ -33,7 +32,6 @@ namespace ShopVitrin.Controllers
             return View("Index", _db.Urunler.ToList());
         }
 
-        [HttpGet]
         public IActionResult UrunGuncelle(int id)
         {
             List<Urun> urunler = _db.Urunler.ToList();
@@ -95,23 +93,5 @@ namespace ShopVitrin.Controllers
             }
             return RedirectToAction("Index");
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
