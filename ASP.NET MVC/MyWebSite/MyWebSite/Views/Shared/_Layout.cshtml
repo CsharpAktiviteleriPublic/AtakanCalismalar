@@ -87,7 +87,7 @@
                     <p>
                         I was born in Ankara in 1995 and graduated from Kırıkkale University with a degree in Civil Engineering. Although my academic background is in civil engineering, my interest in software development started after graduation. I pursued my passion by enrolling in Bilge Adam Boost Program and graduated as a Jr. Full Stack Developer. Currently, I am developing projects on the .Net platform and am proficient in technologies such as ASP.Net MVC, .Net Core, JavaScript-HTML-CSS-jQuery, Entity Framework, and MsSql.  I am a quick learner and am always eager to stay up-to-date with the latest technologies and best practices in the field.
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <button class="btn btn-outline-success rounded-pill" id="downloadButton">Download CV</button>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
@@ -145,9 +145,9 @@
             <h6 class="section-title mb-6">My Projects</h6>
             <!-- row -->
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a href="https://github.com/atakanbektas/ProDietApp" class="portfolio-card" target="_blank">
-                        <img src="assets/imgs/pro1.png" class="portfolio-card-img" alt="You can visit when click!" href="https://github.com/atakanbektas">
+                        <img src="~/assets/imgs/pro1.png" class="portfolio-card-img" alt="You can visit when click!" href="https://github.com/atakanbektas" >
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>
@@ -162,9 +162,9 @@
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <a href="https://github.com/atakanbektas/Basic-Music-Player" class="portfolio-card" target="_blank">
-                        <img class="portfolio-card-img" src="assets/imgs/MusicPlayer.png" class="img-responsive rounded" style="width:41rem" alt="You can visit when click!">
+                        <img class="portfolio-card-img" src="assets/imgs/MusicPlayer.png" class="img-responsive rounded" style="width:63rem" alt="You can visit when click!">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>
@@ -174,7 +174,7 @@
                         </span>
                     </a>
                 </div>
-                <div class="col-md-4">
+               @* <div class="col-md-4">
                     <a href="#" class="portfolio-card">
                         <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
@@ -185,7 +185,7 @@
                             </span>
                         </span>
                     </a>
-                </div>
+                </div>*@
             </div><!-- end of row -->
         </div><!-- end of container -->
     </section> <!-- end of portfolio section -->
@@ -412,6 +412,15 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        let downloadCvButton = document.getElementById("downloadButton");
+        downloadCvButton.addEventListener('click', function () {
+            downloadCvButton.innerHTML = 'You downloaded my cv !';
+            downloadCvButton.disabled = true;
+            window.location.href = '/Home/DownloadCV';
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>

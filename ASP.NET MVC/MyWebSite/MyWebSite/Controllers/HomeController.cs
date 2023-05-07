@@ -18,9 +18,20 @@ namespace MyWebSite.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult DownloadCV()
         {
-            return View();
+            string filePath = Path.Combine(
+                Directory.GetCurrentDirectory(),
+                "wwwroot",
+                "other-files",
+                "atakanbektas_cv.pdf"
+            );
+
+            // Set the appropriate content type for PDF
+            string contentType = "application/pdf";
+
+            // Return the file for download
+            return PhysicalFile(filePath, contentType, "atakanbektas_cv.pdf");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
